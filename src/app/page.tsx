@@ -1,11 +1,11 @@
 import { Button } from "@/components/ui/button";
-import { BaggageClaim, Clapperboard, MapPinned } from "lucide-react";
+import { BaggageClaim, Clapperboard, MapPinned, Star } from "lucide-react";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <main className="mx-auto container">
-      {/* Navbar */}
+      {/* Navbar - section */}
       <header className="flex justify-between w-full py-4">
         <p className="text-3xl font-semibold">
           <span className="text-cyan-600">Stay</span>cation
@@ -20,7 +20,7 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Hero Section */}
+      {/* Hero - section */}
       <div className="grid grid-cols-2 mt-10">
         <div className="col-span-1">
           <h1 className="text-4xl font-semibold">
@@ -407,6 +407,44 @@ export default function Home() {
               <p className="text-base text-gray-400">Wonosobo, Indonesia</p>
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* Feedback - section */}
+      <div className="grid grid-cols-2 mt-24">
+        <div className="col-span-1">
+          <div className="relative w-[365px] h-[501px]">
+            <Image
+              className="absolute !left-10 !top-10"
+              src="/family-feedback.png"
+              fill
+              priority
+              alt="family-feedback-page"
+            />
+            <div className=" w-[365px] h-[501px] border border-gray-300 absolute -z-10 rounded-2xl"></div>
+          </div>
+        </div>
+
+        <div className="col-span-1">
+          <h1 className="text-xl font-normal text-cyan-800 mb-8">
+            Happy Family
+          </h1>
+          <div className="flex items-center mb-2">
+            <Star size={28} fill="orange" color="orange" />
+            <Star size={28} fill="orange" color="orange" />
+            <Star size={28} fill="orange" color="orange" />
+            <Star size={28} fill="orange" color="orange" />
+            <Star size={28} fill="white" color="orange" />
+          </div>
+          <h1 className="text-4xl font-normal text-cyan-800 w-4/5">
+            What a great trip with my family and I should try again next time
+            soon ...
+          </h1>
+          <p className="text-gray-400 text-base w-1/2 mt-5 mb-7">
+            Diko Mahendra, Frontend Developer
+          </p>
+
+          <Button className="bg-cyan-600 font-light">Read Their Story</Button>
         </div>
       </div>
     </main>
