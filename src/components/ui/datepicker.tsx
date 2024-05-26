@@ -34,9 +34,9 @@ export function DatePickerWithRange({
               !date && "text-muted-foreground"
             )}
           >
-            <Button className="absolute left-0 bg-cyan-800 py-6">
-              <CalendarIcon size={32} />
-            </Button>
+            <div className="absolute cursor-pointer left-0 bg-cyan-800 h-full px-4 flex justify-center items-center rounded-e-xl">
+              <CalendarIcon size={32} className="text-white" />
+            </div>
             {date?.from ? (
               date.to ? (
                 <>

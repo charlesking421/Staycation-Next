@@ -410,7 +410,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="col-span-1">
+        <div className="col-span-1 flex flex-col justify-center">
           <h1 className="text-xl font-normal text-cyan-800 mb-8">
             Happy Family
           </h1>
@@ -421,15 +421,18 @@ export default function Home() {
             <Star size={28} fill="orange" color="orange" />
             <Star size={28} fill="white" color="orange" />
           </div>
-          <h1 className="text-4xl font-normal text-cyan-800 w-4/5">
+          <h1 className="text-4xl font-normal text-cyan-800 w-4/5 mt-8">
             What a great trip with my family and I should try again next time
             soon ...
           </h1>
           <p className="text-gray-400 text-base w-1/2 mt-5 mb-7">
             Diko Mahendra, Frontend Developer
           </p>
-
-          <Button className="bg-cyan-600 font-light">Read Their Story</Button>
+          <div>
+            <Button className="bg-cyan-600 font-light text-base">
+              Read Their Story
+            </Button>
+          </div>
         </div>
       </div>
     </main>
