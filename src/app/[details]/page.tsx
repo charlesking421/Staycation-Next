@@ -5,12 +5,16 @@ import {
   BreadcrumbList,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
+import { Button } from "@/components/ui/button";
+import { DatePickerWithRange } from "@/components/ui/datepicker";
 import {
   AirVent,
   Bath,
   BedDouble,
   Home,
+  Minus,
   Monitor,
+  Plus,
   Refrigerator,
   Utensils,
   Wifi,
@@ -159,7 +163,110 @@ export default function page() {
             </div>
           </div>
         </div>
-        <div className="cols-span-1">2</div>
+        <div className="cols-span-1 p-8">
+          <div className="border rounded-xl border-gray-200 px-24 py-12">
+            <p className="text-xl text-cyan-800">Start Booking</p>
+            <p className="text-4xl text-gray-300 font-light mt-3">
+              <span className="text-cyan-500 font-semibold">$280</span> / night
+            </p>
+            <div className="mt-10">
+              <p className="text-cyan-800 mb-4">How long you will stay?</p>
+              <div className="flex bg-gray-100 rounded-sm justify-between items-center">
+                <Button className="bg-red-400 py-6">
+                  <Minus />
+                </Button>
+                <span className="text-2xl text-gray-300">0</span>
+                <Button className="bg-cyan-600 py-6">
+                  <Plus />
+                </Button>
+              </div>
+            </div>
+
+            <div className="mt-4">
+              <p className="text-cyan-800 mb-4">Pick a Date</p>
+              <DatePickerWithRange />
+
+              <p className="text-base font-light text-gray-300 mt-3">
+                You will pay <span className="text-cyan-800">$480</span> USD per
+                <span className="text-cyan-800">2 nights</span>
+              </p>
+              <Button size="lg" className="w-full bg-cyan-600 mt-12 text-base">
+                Continue to Book
+              </Button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Suggestion Treasure - section */}
+      <div className="mt-16">
+        <p className="text-lg text-cyan-800 font-semibold">
+          Treasure to Choose
+        </p>
+
+        <div className="grid grid-cols-4 gap-8 mt-5">
+          <div>
+            <div className="relative aspect-video">
+              <Image
+                src="/treasure-choose/pic-1.jpg"
+                fill
+                priority
+                alt="beauty-backyard-1"
+              />
+            </div>
+            <div className="mt-4">
+              <p className="text-lg text-cyan-800 mb-1">Green Lake</p>
+              <p className="text-base text-gray-400">Nature</p>
+            </div>
+          </div>
+          <div>
+            <div className="relative aspect-video">
+              <Image
+                src="/treasure-choose/pic-2.jpg"
+                fill
+                priority
+                alt="beauty-backyard-1"
+              />
+            </div>
+            <div className="mt-4">
+              <p className="text-lg text-cyan-800 mb-1">Dog Clubs</p>
+              <p className="text-base text-gray-400">Pool</p>
+            </div>
+          </div>
+          <div>
+            <div className="relative aspect-video">
+              <Image
+                src="/treasure-choose/pic-3.jpg"
+                fill
+                priority
+                alt="beauty-backyard-1"
+              />
+              <div className="absolute top-0 right-0 bg-pink-600 px-6 py-3 rounded-es-2xl">
+                <p className="font-light text-white">
+                  <strong>Popular</strong> Choice
+                </p>
+              </div>
+            </div>
+            <div className="mt-4">
+              <p className="text-lg text-cyan-800 mb-1">Labour and Wait</p>
+              <p className="text-base text-gray-400">Shopping</p>
+            </div>
+          </div>
+          <div>
+            <div className="relative aspect-video">
+              <Image
+                src="/treasure-choose/pic.jpg"
+                fill
+                priority
+                alt="treasure-choose-1"
+              />
+            </div>
+            <div className="mt-4">
+              <p className="text-lg text-cyan-800 mb-1">Snorkeling</p>
+              <p className="text-base text-gray-400">Beach</p>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
   );
