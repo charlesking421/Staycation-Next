@@ -204,43 +204,137 @@ export default function Home() {
         </p>
 
         <div className="grid grid-cols-4 gap-8 mt-5">
-          <div className="relative aspect-video">
-            <Image
-              src="/beauty-backyard/pic-1.jpg"
-              fill
-              priority
-              alt="beauty-backyard-1"
-            />
-            <div className="absolute top-0 right-0 bg-pink-600 px-6 py-3 rounded-es-2xl">
-              <p className="font-light text-white">
-                <strong>Popular</strong>
-                Choice
-              </p>
+          <div>
+            <div className="relative aspect-video">
+              <Image
+                src="/beauty-backyard/pic-1.jpg"
+                fill
+                priority
+                alt="beauty-backyard-1"
+              />
+              <div className="absolute top-0 right-0 bg-pink-600 px-6 py-3 rounded-es-2xl">
+                <p className="font-light text-white">
+                  <strong>Popular</strong> Choice
+                </p>
+              </div>
+            </div>
+            <div className="mt-4">
+              <p className="text-lg text-cyan-800 mb-1">Tabby Town</p>
+              <p className="text-base text-gray-400">Gunung Batu, Indonesia</p>
             </div>
           </div>
-          <div className="relative aspect-video">
-            <Image
-              src="/beauty-backyard/pic-2.jpg"
-              fill
-              priority
-              alt="beauty-backyard-1"
-            />
+          <div>
+            <div className="relative aspect-video">
+              <Image
+                src="/beauty-backyard/pic-2.jpg"
+                fill
+                priority
+                alt="beauty-backyard-1"
+              />
+            </div>
+            <div className="mt-4">
+              <p className="text-lg text-cyan-800 mb-1">Anggana</p>
+              <p className="text-base text-gray-400">Bogor, Indonesia</p>
+            </div>
           </div>
-          <div className="relative aspect-video">
-            <Image
-              src="/beauty-backyard/pic-3.jpg"
-              fill
-              priority
-              alt="beauty-backyard-1"
-            />
+          <div>
+            <div className="relative aspect-video">
+              <Image
+                src="/beauty-backyard/pic-3.jpg"
+                fill
+                priority
+                alt="beauty-backyard-1"
+              />
+            </div>
+            <div className="mt-4">
+              <p className="text-lg text-cyan-800 mb-1">Seattle Rain</p>
+              <p className="text-base text-gray-400">Jakarta, Indonesia</p>
+            </div>
           </div>
-          <div className="relative aspect-video">
-            <Image
-              src="/beauty-backyard/pic.jpg"
-              fill
-              priority
-              alt="beauty-backyard-1"
-            />
+          <div>
+            <div className="relative aspect-video">
+              <Image
+                src="/beauty-backyard/pic.jpg"
+                fill
+                priority
+                alt="beauty-backyard-1"
+              />
+            </div>
+            <div className="mt-4">
+              <p className="text-lg text-cyan-800 mb-1">Wodden Pit</p>
+              <p className="text-base text-gray-400">Wonosobo, Indonesia</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Hotels with large living room - section */}
+      <div className="mt-16">
+        <p className="text-lg text-cyan-800 font-semibold">
+          Hotels with large living room
+        </p>
+
+        <div className="grid grid-cols-4 gap-8 mt-5">
+          <div>
+            <div className="relative aspect-video">
+              <Image
+                src="/large-living-room/pic-1.jpg"
+                fill
+                priority
+                alt="beauty-backyard-1"
+              />
+            </div>
+            <div className="mt-4">
+              <p className="text-lg text-cyan-800 mb-1">Green Park</p>
+              <p className="text-base text-gray-400">Tangerang, Indonesia</p>
+            </div>
+          </div>
+          <div>
+            <div className="relative aspect-video">
+              <Image
+                src="/large-living-room/pic-2.jpg"
+                fill
+                priority
+                alt="beauty-backyard-1"
+              />
+            </div>
+            <div className="mt-4">
+              <p className="text-lg text-cyan-800 mb-1">Podo Wae</p>
+              <p className="text-base text-gray-400">Madiun, Indonesia</p>
+            </div>
+          </div>
+          <div>
+            <div className="relative aspect-video">
+              <Image
+                src="/large-living-room/pic-3.jpg"
+                fill
+                priority
+                alt="beauty-backyard-1"
+              />
+              <div className="absolute top-0 right-0 bg-pink-600 px-6 py-3 rounded-es-2xl">
+                <p className="font-light text-white">
+                  <strong>Popular</strong> Choice
+                </p>
+              </div>
+            </div>
+            <div className="mt-4">
+              <p className="text-lg text-cyan-800 mb-1">Silver Rain</p>
+              <p className="text-base text-gray-400">Bandung, Indonesia</p>
+            </div>
+          </div>
+          <div>
+            <div className="relative aspect-video">
+              <Image
+                src="/large-living-room/pic.jpg"
+                fill
+                priority
+                alt="large-living-room-1"
+              />
+            </div>
+            <div className="mt-4">
+              <p className="text-lg text-cyan-800 mb-1">Cashville</p>
+              <p className="text-base text-gray-400">Wonosobo, Indonesia</p>
+            </div>
           </div>
         </div>
       </div>
@@ -252,42 +346,65 @@ export default function Home() {
         </p>
 
         <div className="grid grid-cols-4 gap-8 mt-5">
-          <div className="relative aspect-video">
-            <Image
-              src="/kitchen-set/pic-1.jpg"
-              fill
-              priority
-              alt="beauty-backyard-1"
-            />
+          <div>
+            <div className="relative aspect-video">
+              <Image
+                src="/kitchen-set/pic-1.jpg"
+                fill
+                priority
+                alt="beauty-backyard-1"
+              />
+            </div>
+            <div className="mt-4">
+              <p className="text-lg text-cyan-800 mb-1">PS Woord</p>
+              <p className="text-base text-gray-400">Depok, Indonesia</p>
+            </div>
           </div>
-          <div className="relative aspect-video">
-            <Image
-              src="/kitchen-set/pic-2.jpg"
-              fill
-              priority
-              alt="beauty-backyard-1"
-            />
+          <div>
+            <div className="relative aspect-video">
+              <Image
+                src="/kitchen-set/pic-2.jpg"
+                fill
+                priority
+                alt="beauty-backyard-1"
+              />
+            </div>
+            <div className="mt-4">
+              <p className="text-lg text-cyan-800 mb-1">One Five</p>
+              <p className="text-base text-gray-400">Madiun, Indonesia</p>
+            </div>
           </div>
-          <div className="relative aspect-video">
-            <Image
-              src="/kitchen-set/pic-3.jpg"
-              fill
-              priority
-              alt="beauty-backyard-1"
-            />
+          <div>
+            <div className="relative aspect-video">
+              <Image
+                src="/kitchen-set/pic-3.jpg"
+                fill
+                priority
+                alt="beauty-backyard-1"
+              />
+            </div>
+            <div className="mt-4">
+              <p className="text-lg text-cyan-800 mb-1">Minimal Rain</p>
+              <p className="text-base text-gray-400">Bandung, Indonesia</p>
+            </div>
           </div>
-          <div className="relative aspect-video">
-            <Image
-              src="/kitchen-set/pic.jpg"
-              fill
-              priority
-              alt="kitchen-set-1"
-            />
-            <div className="absolute top-0 right-0 bg-pink-600 px-6 py-3 rounded-es-2xl">
-              <p className="font-light text-white">
-                <strong>Popular</strong>
-                Choice
-              </p>
+          <div>
+            <div className="relative aspect-video">
+              <Image
+                src="/kitchen-set/pic.jpg"
+                fill
+                priority
+                alt="kitchen-set-1"
+              />
+              <div className="absolute top-0 right-0 bg-pink-600 px-6 py-3 rounded-es-2xl">
+                <p className="font-light text-white">
+                  <strong>Popular</strong> Choice
+                </p>
+              </div>
+            </div>
+            <div className="mt-4">
+              <p className="text-lg text-cyan-800 mb-1">Stays Home</p>
+              <p className="text-base text-gray-400">Wonosobo, Indonesia</p>
             </div>
           </div>
         </div>
