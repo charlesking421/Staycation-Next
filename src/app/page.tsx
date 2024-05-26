@@ -206,18 +206,10 @@ export default function Home() {
         <div className="grid grid-cols-4 gap-8 mt-5">
           <div className="relative aspect-video">
             <Image
-              src="/most-picked/pic-1.jpg"
+              src="/beauty-backyard/pic-1.jpg"
               fill
               priority
-              alt="most-picked-1"
-            />
-          </div>
-          <div className="relative aspect-video">
-            <Image
-              src="/most-picked/pic-2.jpg"
-              fill
-              priority
-              alt="most-picked-1"
+              alt="beauty-backyard-1"
             />
             <div className="absolute top-0 right-0 bg-pink-600 px-6 py-3 rounded-es-2xl">
               <p className="font-light text-white">
@@ -228,18 +220,26 @@ export default function Home() {
           </div>
           <div className="relative aspect-video">
             <Image
-              src="/most-picked/pic-2.jpg"
+              src="/beauty-backyard/pic-2.jpg"
               fill
               priority
-              alt="most-picked-1"
+              alt="beauty-backyard-1"
             />
           </div>
           <div className="relative aspect-video">
             <Image
-              src="/most-picked/pic-2.jpg"
+              src="/beauty-backyard/pic-3.jpg"
               fill
               priority
-              alt="most-picked-1"
+              alt="beauty-backyard-1"
+            />
+          </div>
+          <div className="relative aspect-video">
+            <Image
+              src="/beauty-backyard/pic.jpg"
+              fill
+              priority
+              alt="beauty-backyard-1"
             />
           </div>
         </div>
