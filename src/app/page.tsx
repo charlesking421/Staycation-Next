@@ -57,15 +57,142 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="col-span-1">
+        <div className="col-span-1 flex justify-end">
           <div className="relative w-[520px] h-[410px]">
             <Image
+              className="absolute !-left-20"
               src="/hero-landing.png"
               fill
               priority
               alt="hero-landing-page"
             />
-            <div className=" w-[480px] h-[410px] border border-gray-300 absolute -bottom-8 -z-10 rounded-2xl left-20"></div>
+            <div className=" w-[480px] h-[410px] border border-gray-300 absolute -bottom-8 -z-10 rounded-2xl left-0"></div>
+          </div>
+        </div>
+      </div>
+
+      {/* Most Picked - section */}
+      <div className="mt-16">
+        <p className="text-lg text-cyan-800 font-semibold">Most Picked</p>
+        <div className="grid grid-cols-12 gap-4 mt-5">
+          <div className="col-span-4">
+            <div className="relative w-full h-full">
+              <Image
+                src="/most-picked/most-picked-big.png"
+                fill
+                priority
+                alt="most-picked-1"
+              />
+              <div className="absolute top-0 right-0 bg-pink-600 px-6 py-3 rounded-es-2xl">
+                <p className="font-light text-white">
+                  <strong>$50</strong> per night
+                </p>
+              </div>
+              <div className="absolute bottom-2 left-0 px-6 py-3 z-10">
+                <p className="font-semibold text-white text-2xl">Blue Ocean</p>
+                <p className="font-light text-white text-lg">
+                  Jakarta, Indonesia
+                </p>
+              </div>
+
+              <div className="bg-gradient-to-t from-black/40 w-full h-full top-0 z-[1] absolute"></div>
+            </div>
+          </div>
+          <div className="col-span-8 grid grid-cols-2 gap-8">
+            <div className="col-span-1 space-y-8">
+              <div className="relative aspect-video">
+                <Image
+                  src="/most-picked/pic-1.jpg"
+                  fill
+                  priority
+                  alt="most-picked-1"
+                />
+                <div className="absolute top-0 right-0 bg-pink-600 px-6 py-3 rounded-es-2xl">
+                  <p className="font-light text-white">
+                    <strong>$20</strong> per night
+                  </p>
+                </div>
+                <div className="absolute bottom-2 left-0 px-6 py-3 z-10">
+                  <p className="font-semibold text-white text-2xl">
+                    Ocean Land
+                  </p>
+                  <p className="font-light text-white text-lg">
+                    Bandung, Indonesia
+                  </p>
+                </div>
+
+                <div className="bg-gradient-to-t from-black/40 w-full h-full top-0 z-[1] absolute"></div>
+              </div>
+              <div className="relative aspect-video">
+                <Image
+                  src="/most-picked/pic-2.jpg"
+                  fill
+                  priority
+                  alt="most-picked-1"
+                />
+                <div className="absolute top-0 right-0 bg-pink-600 px-6 py-3 rounded-es-2xl">
+                  <p className="font-light text-white">
+                    <strong>$520</strong> per night
+                  </p>
+                </div>
+                <div className="absolute bottom-2 left-0 px-6 py-3 z-10">
+                  <p className="font-semibold text-white text-2xl">
+                    Stark House
+                  </p>
+                  <p className="font-light text-white text-lg">
+                    Lampung, Indonesia
+                  </p>
+                </div>
+
+                <div className="bg-gradient-to-t from-black/40 w-full h-full top-0 z-[1] absolute"></div>
+              </div>
+            </div>
+            <div className="col-span-1 space-y-8">
+              <div className="relative aspect-video">
+                <Image
+                  src="/most-picked/pic-2.jpg"
+                  fill
+                  priority
+                  alt="most-picked-1"
+                />
+                <div className="absolute top-0 right-0 bg-pink-600 px-6 py-3 rounded-es-2xl">
+                  <p className="font-light text-white">
+                    <strong>$10</strong> per night
+                  </p>
+                </div>
+                <div className="absolute bottom-2 left-0 px-6 py-3 z-10">
+                  <p className="font-semibold text-white text-2xl">Bobox</p>
+                  <p className="font-light text-white text-lg">
+                    Jogjakarta, Indonesia
+                  </p>
+                </div>
+
+                <div className="bg-gradient-to-t from-black/40 w-full h-full top-0 z-[1] absolute"></div>
+              </div>
+              <div className="relative aspect-video">
+                <Image
+                  src="/most-picked/pic.jpg"
+                  fill
+                  priority
+                  alt="most-picked-1"
+                />
+                <div className="absolute top-0 right-0 bg-pink-600 px-6 py-3 rounded-es-2xl">
+                  <p className="font-light text-white">
+                    <strong>$930</strong> per night
+                  </p>
+                </div>
+                <div className="absolute bottom-2 left-0 px-6 py-3 z-10">
+                  <p className="font-semibold text-white text-2xl">
+                    Vinna Vill
+                  </p>
+                  <p className="font-light text-white text-lg">
+                    Malang, Indonesia
+                  </p>
+                </div>
+
+                <div className="bg-gradient-to-t from-black/40 w-full h-full top-0 z-[1] absolute"></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
