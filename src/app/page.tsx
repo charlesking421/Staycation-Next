@@ -196,6 +196,54 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      {/* Houses with beauty backyard - section */}
+      <div className="mt-16">
+        <p className="text-lg text-cyan-800 font-semibold">
+          Houses with beauty backyard
+        </p>
+
+        <div className="grid grid-cols-4 gap-8 mt-5">
+          <div className="relative aspect-video">
+            <Image
+              src="/most-picked/pic-1.jpg"
+              fill
+              priority
+              alt="most-picked-1"
+            />
+          </div>
+          <div className="relative aspect-video">
+            <Image
+              src="/most-picked/pic-2.jpg"
+              fill
+              priority
+              alt="most-picked-1"
+            />
+            <div className="absolute top-0 right-0 bg-pink-600 px-6 py-3 rounded-es-2xl">
+              <p className="font-light text-white">
+                <strong>Popular</strong>
+                Choice
+              </p>
+            </div>
+          </div>
+          <div className="relative aspect-video">
+            <Image
+              src="/most-picked/pic-2.jpg"
+              fill
+              priority
+              alt="most-picked-1"
+            />
+          </div>
+          <div className="relative aspect-video">
+            <Image
+              src="/most-picked/pic-2.jpg"
+              fill
+              priority
+              alt="most-picked-1"
+            />
+          </div>
+        </div>
+      </div>
     </main>
   );
 }
