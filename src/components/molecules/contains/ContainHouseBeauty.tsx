@@ -11,6 +11,7 @@ export const detailCardItem = atomWithStorage<TResponseGetData[0]>("detail", {
   image: "",
   location: "",
   price: 0,
+  description: "",
   isPopular: false,
 });
 
