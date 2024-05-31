@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Hidden Gem Resort",
+    "image": "/treasure-choose/pic.jpg",
+    "location": "Bali, Indonesia",
+    "price": 300,
+    "isPopular": true
+  },
+  {
+    "name": "Secluded Sanctuary",
+    "image": "/treasure-choose/pic-1.jpg",
+    "location": "Yogyakarta, Indonesia",
+    "price": 250,
+    "isPopular": false
+  },
+  {
+    "name": "Secret Haven",
+    "image": "/treasure-choose/pic-2.jpg",
+    "location": "Bandung, Indonesia",
+    "price": 280,
+    "isPopular": true
+  },
+  {
+    "name": "Enchanted Retreat",
+    "image": "/treasure-choose/pic-3.jpg",
+    "location": "Surabaya, Indonesia",
+    "price": 260,
+    "isPopular": false
+  }
+]

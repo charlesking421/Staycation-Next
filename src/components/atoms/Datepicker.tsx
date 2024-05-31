@@ -1,26 +1,36 @@
 "use client";
 
-import * as React from "react";
+import { useState, useEffect } from "react";
 import { addDays, format } from "date-fns";
 import { Calendar as CalendarIcon } from "lucide-react";
 import { DateRange } from "react-day-picker";
 
 import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
-import { Calendar } from "@/components/ui/calendar";
+import { Button } from "@/components/atoms/Button";
+import { Calendar } from "@/components/atoms/Calendar";
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@/components/ui/popover";
+} from "@/components/atoms/Popover";
 
 export function DatePickerWithRange({
   className,
-}: React.HTMLAttributes<HTMLDivElement>) {
-  const [date, setDate] = React.useState<DateRange | undefined>({
-    from: new Date(2022, 0, 20),
-    to: addDays(new Date(2022, 0, 20), 20),
+  howLong = 0,
+}: React.HTMLAttributes<HTMLDivElement> & { howLong?: number }) {
+  const [date, setDate] = useState<DateRange | undefined>({
+    from: new Date(),
+    to: addDays(new Date(), howLong),
   });
+
+  useEffect(() => {
+    if (howLong > 0) {
+      setDate(() => ({
+        from: new Date(),
+        to: addDays(new Date(), howLong - 1),
+      }));
+    }
+  }, [howLong]);
 
   return (
     <div className={cn("grid gap-2", className)}>
@@ -30,13 +40,14 @@ export function DatePickerWithRange({
             id="date"
             variant={"outline"}
             className={cn(
-              "w-full relative justify-center py-6 text-left font-normal text-base text-cyan-800",
+              "w-full relative justify-center py-6 font-normal text-center text-base text-cyan-800",
               !date && "text-muted-foreground"
             )}
           >
             <div className="absolute cursor-pointer left-0 bg-cyan-800 h-full px-4 flex justify-center items-center rounded-e-xl">
-              <CalendarIcon size={32} className="text-white" />
+              <CalendarIcon size={26} className="text-white" />
             </div>
+
             {date?.from ? (
               date.to ? (
                 <>

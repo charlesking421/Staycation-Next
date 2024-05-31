@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Backyard Bliss",
+    "image": "/beauty-backyard/pic-3.jpg",
+    "location": "Yogyakarta, Indonesia",
+    "price": 180,
+    "isPopular": false,
+    "description": "Backyard Bliss adalah tempat yang sempurna untuk melarikan diri dari hiruk-pikuk kota. Terletak di Yogyakarta, hotel ini menawarkan suasana tenang dengan halaman belakang yang luas dan asri. Setiap sudut properti dirancang untuk memberikan kenyamanan dan kedamaian bagi para tamu.\n\nFasilitas di Backyard Bliss meliputi kolam renang outdoor, area barbekyu, dan taman yang indah. Para tamu dapat menikmati waktu bersantai di kursi santai di taman atau mengadakan piknik keluarga di bawah pepohonan rindang. Hotel ini juga menyediakan layanan spa untuk memanjakan diri.\n\nDengan lokasinya yang strategis, Backyard Bliss memberikan akses mudah ke berbagai tempat wisata di Yogyakarta. Anda dapat menjelajahi situs bersejarah, menikmati kuliner lokal, atau hanya bersantai dan menikmati keindahan alam sekitar. Hotel ini benar-benar tempat yang ideal untuk liburan yang menenangkan."
+  },
+  {
+    "name": "Nature's Retreat",
+    "image": "/beauty-backyard/pic-2.jpg",
+    "location": "Bandung, Indonesia",
+    "price": 250,
+    "isPopular": true,
+    "description": "Nature's Retreat adalah hotel yang terletak di jantung alam Bandung, menawarkan suasana yang menenangkan dan pemandangan yang memukau. Hotel ini dirancang untuk mereka yang mencari pelarian dari kehidupan sehari-hari dan ingin menikmati keindahan alam yang murni.\n\nDengan halaman belakang yang luas dan hijau, Nature's Retreat menyediakan tempat yang sempurna untuk bersantai dan beristirahat. Anda dapat berjalan-jalan di taman yang indah, duduk di bangku taman sambil membaca buku, atau menikmati piknik bersama keluarga di bawah pohon-pohon rindang. Fasilitas lainnya termasuk kolam renang dan pusat kebugaran.\n\nHotel ini juga dekat dengan berbagai atraksi alam di Bandung, seperti pegunungan dan air terjun. Para tamu dapat melakukan perjalanan hiking, bersepeda, atau hanya menikmati pemandangan alam yang menakjubkan. Nature's Retreat adalah tempat yang sempurna untuk menyegarkan tubuh dan pikiran."
+  },
+  {
+    "name": "Sunny Garden Hotel",
+    "image": "/beauty-backyard/pic-1.jpg",
+    "location": "Surabaya, Indonesia",
+    "price": 200,
+    "isPopular": false,
+    "description": "Sunny Garden Hotel adalah tempat yang ideal untuk mereka yang mencari ketenangan di tengah kota Surabaya. Dengan halaman belakang yang indah dan penuh bunga, hotel ini menawarkan suasana yang menenangkan dan menyegarkan bagi para tamu.\n\nSetiap kamar di Sunny Garden Hotel dirancang dengan kenyamanan dan kemewahan, dilengkapi dengan fasilitas modern untuk memastikan masa tinggal yang menyenangkan. Para tamu dapat menikmati waktu bersantai di taman yang tenang, berenang di kolam renang outdoor, atau menikmati sarapan di teras dengan pemandangan taman.\n\nLokasinya yang strategis membuat Sunny Garden Hotel mudah diakses dari berbagai destinasi wisata dan pusat perbelanjaan di Surabaya. Hotel ini memberikan keseimbangan sempurna antara kenyamanan kota dan keindahan alam, menjadikannya pilihan populer bagi wisatawan dan pebisnis."
+  },
+  {
+    "name": "Green Oasis Hotel",
+    "image": "/beauty-backyard/pic.jpg",
+    "location": "Jakarta, Indonesia",
+    "price": 270,
+    "isPopular": true,
+    "description": "Green Oasis Hotel adalah tempat persembunyian yang tenang di tengah hiruk-pikuk Jakarta. Hotel ini menawarkan halaman belakang yang luas dengan tanaman hijau yang subur, menciptakan suasana damai dan menyegarkan. Desain yang elegan dan fasilitas yang lengkap memastikan pengalaman menginap yang luar biasa.\n\nPara tamu dapat menikmati berbagai fasilitas seperti kolam renang outdoor, area lounge, dan spa mewah. Halaman belakang yang indah menyediakan tempat yang sempurna untuk bersantai, dengan banyak area duduk dan taman yang rimbun. Hotel ini juga menawarkan layanan kebugaran dan yoga untuk menjaga keseimbangan tubuh dan pikiran.\n\nDengan lokasinya yang strategis, Green Oasis Hotel memberikan akses mudah ke berbagai pusat perbelanjaan, restoran, dan hiburan di Jakarta. Hotel ini adalah tempat ideal bagi mereka yang mencari kenyamanan modern dengan sentuhan alam. Setiap momen di Green Oasis Hotel dirancang untuk memberikan relaksasi dan kebahagiaan."
+  }
+]

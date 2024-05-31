@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Grand Suite Hotel",
+    "image": "/large-living-room/pic.jpg",
+    "location": "Jakarta, Indonesia",
+    "price": 300,
+    "isPopular": true,
+    "description": "Grand Suite Hotel offers a luxurious experience with its spacious living rooms, perfect for those who value comfort and elegance. Located in the heart of Jakarta, this hotel boasts modern design and upscale amenities, ensuring a memorable stay for every guest.\n\nEach suite at Grand Suite Hotel is meticulously designed to provide ample space and a cozy ambiance. The large living rooms are tastefully decorated with high-end furnishings and feature panoramic views of the city skyline. Guests can unwind in style and enjoy the ultimate relaxation in these lavish surroundings.\n\nIn addition to its luxurious accommodations, Grand Suite Hotel also offers world-class dining options, state-of-the-art fitness facilities, and personalized concierge services. Whether you're visiting for business or pleasure, this hotel provides everything you need for a truly unforgettable stay."
+  },
+  {
+    "name": "Luxury Palace",
+    "image": "/large-living-room/pic-1.jpg",
+    "location": "Bali, Indonesia",
+    "price": 400,
+    "isPopular": true,
+    "description": "Luxury Palace is a haven of opulence and sophistication, nestled in the breathtaking landscapes of Bali. This exclusive retreat offers expansive living spaces with stunning views of the tropical surroundings, creating an unparalleled sense of luxury and tranquility.\n\nEach room at Luxury Palace is meticulously designed to evoke a sense of grandeur and comfort. The spacious living rooms are adorned with plush furnishings and elegant decor, providing the perfect setting for relaxation and entertainment. Guests can indulge in the ultimate pampering experience and enjoy personalized services from the hotel's dedicated staff.\n\nWith its prime location in Bali, Luxury Palace offers easy access to the island's top attractions and cultural landmarks. Whether you're seeking adventure or relaxation, this exquisite retreat promises an unforgettable escape in paradise."
+  },
+  {
+    "name": "Royal Residence",
+    "image": "/large-living-room/pic-2.jpg",
+    "location": "Bandung, Indonesia",
+    "price": 350,
+    "isPopular": false,
+    "description": "Royal Residence offers a regal experience with its luxurious living spaces and elegant decor. Nestled in the scenic landscapes of Bandung, this prestigious hotel exudes timeless charm and sophistication, making it the perfect destination for discerning travelers.\n\nEach residence at Royal Residence is meticulously crafted to provide the utmost comfort and convenience. The spacious living rooms are adorned with exquisite furnishings and feature majestic views of the surrounding mountains and lush greenery. Guests can bask in the lap of luxury and enjoy unparalleled comfort in these palatial surroundings.\n\nIn addition to its lavish accommodations, Royal Residence also offers a range of world-class amenities, including gourmet dining options, rejuvenating spa treatments, and personalized concierge services. Whether you're visiting for business or leisure, this distinguished hotel ensures a truly memorable stay."
+  },
+  {
+    "name": "Elegant Stay",
+    "image": "/large-living-room/pic-3.jpg",
+    "location": "Surabaya, Indonesia",
+    "price": 280,
+    "isPopular": true,
+    "description": "Elegant Stay offers a sophisticated retreat with its stylish living rooms and modern amenities. Located in the vibrant city of Surabaya, this boutique hotel combines contemporary design with warm hospitality, providing guests with a memorable and comfortable stay.\n\nEach room at Elegant Stay is thoughtfully designed to create a cozy and inviting atmosphere. The spacious living rooms are tastefully decorated with chic furnishings and feature expansive windows that flood the space with natural light. Guests can relax and unwind in these elegant surroundings, enjoying the perfect blend of comfort and style.\n\nIn addition to its well-appointed accommodations, Elegant Stay also offers a range of personalized services, including 24-hour room service, complimentary breakfast, and airport transfers. Whether you're traveling for business or leisure, this charming hotel provides everything you need for a delightful stay in Surabaya."
+  }
+]

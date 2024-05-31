@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Skyline Apartment",
+    "image": "/kitchen-set/pic.jpg",
+    "location": "Jakarta, Indonesia",
+    "price": 250,
+    "isPopular": true,
+    "description": "Skyline Apartment menawarkan pemandangan kota Jakarta yang menakjubkan dari setiap sudut. Apartemen ini dirancang dengan konsep modern yang elegan, memberikan kenyamanan dan kemewahan bagi setiap penghuni. Fasilitas lengkap termasuk gym, kolam renang, dan area hijau membuatnya menjadi tempat tinggal yang ideal bagi mereka yang mencari keseimbangan antara kehidupan kota dan relaksasi.\n\nTerletak di jantung kota Jakarta, Skyline Apartment memberikan kemudahan akses ke berbagai pusat perbelanjaan, restoran, dan hiburan. Transportasi umum yang mudah dijangkau menjadikan mobilitas sehari-hari lebih efisien. Keamanan 24 jam dan layanan concierge memastikan bahwa setiap kebutuhan penghuni terpenuhi dengan baik.\n\nSelain fasilitas internal yang mewah, Skyline Apartment juga dekat dengan berbagai destinasi wisata ikonik Jakarta. Dengan pemandangan cakrawala yang spektakuler, setiap penghuni dapat menikmati suasana kota yang dinamis sekaligus merasa nyaman dan aman di lingkungan yang eksklusif."
+  },
+  {
+    "name": "Green Park Residence",
+    "image": "/kitchen-set/pic-1.jpg",
+    "location": "Bandung, Indonesia",
+    "price": 180,
+    "isPopular": false,
+    "description": "Green Park Residence adalah pilihan tepat bagi mereka yang menginginkan kehidupan yang tenang dan asri di tengah kota Bandung. Apartemen ini dikelilingi oleh taman hijau yang luas, memberikan suasana sejuk dan segar setiap hari. Desain interior yang minimalis namun elegan menciptakan ruang yang nyaman dan fungsional.\n\nFasilitas yang tersedia di Green Park Residence meliputi area bermain anak, jogging track, dan pusat kebugaran. Dengan lingkungan yang ramah keluarga, apartemen ini sangat cocok untuk mereka yang mencari tempat tinggal yang mendukung gaya hidup sehat dan aktif. Keamanan 24 jam dan sistem akses yang canggih memberikan rasa aman bagi seluruh penghuni.\n\nLokasinya yang strategis memungkinkan penghuni untuk menikmati berbagai kuliner lokal dan internasional, serta akses mudah ke pusat perbelanjaan dan tempat rekreasi. Green Park Residence menawarkan perpaduan sempurna antara ketenangan alam dan kenyamanan modern, menjadikannya pilihan ideal untuk tempat tinggal di Bandung."
+  },
+  {
+    "name": "Ocean View Condo",
+    "image": "/kitchen-set/pic-2.jpg",
+    "location": "Bali, Indonesia",
+    "price": 300,
+    "isPopular": true,
+    "description": "Ocean View Condo menawarkan pemandangan laut yang memukau, memberikan pengalaman tinggal yang mewah di Bali. Setiap unit dirancang dengan detail yang teliti untuk memaksimalkan kenyamanan dan kemewahan, dengan balkon luas yang memungkinkan penghuni menikmati matahari terbenam yang indah setiap hari. Fasilitas mewah termasuk infinity pool, spa, dan pusat kebugaran.\n\nTerletak di lokasi yang prime, Ocean View Condo memberikan akses mudah ke pantai-pantai terkenal, restoran bintang lima, dan pusat hiburan malam. Apartemen ini juga menawarkan layanan concierge eksklusif yang siap membantu setiap kebutuhan penghuni, dari pemesanan restoran hingga layanan kebersihan harian.\n\nDengan lingkungan yang aman dan privat, Ocean View Condo adalah pilihan ideal bagi mereka yang mencari tempat tinggal eksklusif dengan akses langsung ke keindahan alam Bali. Apartemen ini tidak hanya menawarkan kenyamanan tempat tinggal, tetapi juga gaya hidup yang berkelas dan penuh petualangan."
+  },
+  {
+    "name": "City Center Apartment",
+    "image": "/kitchen-set/pic-3.jpg",
+    "location": "Surabaya, Indonesia",
+    "price": 220,
+    "isPopular": false,
+    "description": "City Center Apartment adalah pilihan ideal bagi mereka yang menginginkan kehidupan urban yang dinamis di Surabaya. Apartemen ini terletak di pusat kota, memberikan akses mudah ke berbagai fasilitas umum, perkantoran, dan pusat perbelanjaan. Desain modern dengan sentuhan elegan menciptakan ruang yang nyaman dan fungsional bagi setiap penghuni.\n\nFasilitas lengkap seperti kolam renang, pusat kebugaran, dan lounge membuat City Center Apartment menjadi tempat tinggal yang sempurna bagi mereka yang menghargai kenyamanan dan kemudahan. Keamanan 24 jam dan layanan manajemen profesional memastikan setiap kebutuhan penghuni terpenuhi dengan baik dan aman.\n\nLokasi strategis City Center Apartment memungkinkan penghuni menikmati berbagai pilihan hiburan dan kuliner di Surabaya. Dengan lingkungan yang hidup dan berbagai aktivitas menarik di sekitarnya, apartemen ini menawarkan gaya hidup urban yang aktif dan penuh dengan berbagai kemudahan."
+  }
+]
