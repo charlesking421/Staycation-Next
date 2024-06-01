@@ -1,4 +1,4 @@
-import BookingDestination from "@/components/pages/BookingDestination";
+import BookingDestination from "@/components/pages/details-booking/BookingDestination";
 import React from "react";
 
 export default function page() {

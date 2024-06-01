@@ -12,7 +12,7 @@ import {
   Wifi,
 } from "lucide-react";
 import React from "react";
-import { detailCardItem } from "./contains/ContainMostPicked";
+import { detailCardItem } from "../contains/ContainMostPicked";
 
 export default function DescriptionDetailRoom() {
   const { description } = useAtomValue(detailCardItem);

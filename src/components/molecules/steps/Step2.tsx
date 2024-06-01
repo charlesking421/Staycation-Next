@@ -4,7 +4,7 @@ import { InputWithLabel } from "@/components/atoms/InputWithLabel";
 import { InputFile } from "@/components/atoms/InputFile";
 import BankAccount from "@/components/atoms/BankAccount";
 import { useFormContext } from "react-hook-form";
-import { Schema2 } from "@/components/pages/BookingDestination";
+import { Schema2 } from "@/components/pages/details-booking/BookingDestination";
 
 export default function Step2() {
   const {

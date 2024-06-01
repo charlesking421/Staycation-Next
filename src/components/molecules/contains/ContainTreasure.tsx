@@ -14,7 +14,7 @@ export const detailCardItem = atomWithStorage<TResponseGetData[0]>("detail", {
   isPopular: false,
 });
 
-export function ContainHouseBeauty({ data }: { data: TResponseGetData }) {
+export function ContainTreasure({ data }: { data: TResponseGetData }) {
   const setAtomValue = useSetAtom(detailCardItem);
 
   const onViewDetails = (details: TResponseGetData[0]) => {

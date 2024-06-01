@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Label } from "@/components/atoms/Label";
-import { ContainApartmenKitchen } from "./contains/ContainApartmenKitchen";
+import { ContainApartmenKitchen } from "@/components/molecules/contains/ContainApartmenKitchen";
 
 type TResponseGetData = Array<{
   name: string;

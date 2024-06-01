@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Label } from "@/components/atoms/Label";
-import { ContainMostPicked } from "./contains/ContainMostPicked";
+import { ContainMostPicked } from "@/components/molecules/contains/ContainMostPicked";
 
 export type TResponseGetData = Array<{
   name: string;

@@ -4,7 +4,6 @@ import React from "react";
 import Card from "@/components/molecules/Card";
 import { useSetAtom } from "jotai";
 import { atomWithStorage } from "jotai/utils";
-import { TResponseGetData } from "../MostPicked";
 
 export const detailCardItem = atomWithStorage<TResponseGetData[0]>("detail", {
   name: "",
@@ -30,7 +29,7 @@ export function ContainMostPicked({ data }: { data: TResponseGetData }) {
           price="$50"
           name={data[0].name}
           place={data[0].location}
-          className="relative w-full h-full rounded-2xl overflow-hidden"
+          className="relative w-full h-full cursor-pointer rounded-2xl overflow-hidden"
           images={data[0].image}
           hasBadge={true}
           badgeLabel={

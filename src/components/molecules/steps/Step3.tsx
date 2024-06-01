@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { LabelHeader } from "../headers/HeaderBookingStep";
+import { LabelHeader } from "@/components/molecules/headers/HeaderBookingStep";
 
 export default function Step3() {
   return (

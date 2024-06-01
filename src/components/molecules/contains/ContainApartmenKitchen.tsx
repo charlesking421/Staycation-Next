@@ -4,7 +4,6 @@ import React from "react";
 import Card from "@/components/molecules/Card";
 import { useSetAtom } from "jotai";
 import { atomWithStorage } from "jotai/utils";
-import { TResponseGetData } from "../MostPicked";
 
 export const detailCardItem = atomWithStorage<TResponseGetData[0]>("detail", {
   name: "",

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import Ratings from "../../atoms/Ratings";
-import { Button } from "../../atoms/Button";
+import Ratings from "@/components/atoms/Ratings";
+import { Button } from "@/components/atoms/Button";
 
 export default function TestimonyDetail() {
   return (

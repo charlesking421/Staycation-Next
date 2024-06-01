@@ -1,5 +1,7 @@
 {
   "extends": "next/core-web-vitals",
+  // ignore file @types
+  "ignorePatterns": ["/src/@types/*"],
   "rules": {
     "no-console": "error",
     "no-unused-vars": "error",

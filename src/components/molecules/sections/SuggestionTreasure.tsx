@@ -1,6 +1,6 @@
 import React from "react";
-import { Label } from "../atoms/Label";
-import { ContainHotelLiving } from "./contains/ContainHotelLiving";
+import { Label } from "@/components/atoms/Label";
+import { ContainTreasure } from "@/components/molecules/contains/ContainTreasure";
 
 type TResponseGetData = Array<{
   name: string;
@@ -13,19 +13,21 @@ type TResponseGetData = Array<{
 
 async function getData() {
   const response = await fetch(
-    "http://localhost:3000/json/large-living-room.json"
+    "http://localhost:3000/json/treasure-to-choose.json"
   );
   return response.json();
 }
 
-export default async function HotelsWithLargeLiving() {
+export default async function SuggestionTreasure() {
   const data: TResponseGetData = await getData();
+
   return (
     <div className="mt-16">
       <Label className="text-lg text-cyan-800 font-semibold">
-        Hotels with large living room
+        Treasure to Choose
       </Label>
-      <ContainHotelLiving data={data} />
+
+      <ContainTreasure data={data} />
     </div>
   );
 }

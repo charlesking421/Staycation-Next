@@ -4,27 +4,31 @@
     "image": "/treasure-choose/pic.jpg",
     "location": "Bali, Indonesia",
     "price": 300,
-    "isPopular": true
+    "isPopular": true,
+    "description": "Hidden Gem Resort in Bali is the epitome of luxury and tranquility, offering guests an exclusive retreat away from the hustle and bustle. The resort is located on a secluded beach, providing breathtaking ocean views and direct access to pristine sands. Each villa is meticulously designed with modern comforts and traditional Balinese aesthetics, ensuring a unique and serene experience.\n\nGuests can indulge in various activities including yoga sessions, water sports, and guided cultural tours. The resort also features a world-class spa, infinity pool, and gourmet dining options that highlight both international and local cuisines. Whether you're seeking relaxation or adventure, Hidden Gem Resort promises an unforgettable stay in paradise."
   },
   {
     "name": "Secluded Sanctuary",
     "image": "/treasure-choose/pic-1.jpg",
     "location": "Yogyakarta, Indonesia",
     "price": 250,
-    "isPopular": false
+    "isPopular": false,
+    "description": "Secluded Sanctuary in Yogyakarta offers a peaceful escape amidst lush greenery and historical richness. This boutique hotel is situated near some of Yogyakarta's most renowned cultural sites, providing a perfect blend of relaxation and exploration. Each room is elegantly furnished, combining contemporary comforts with traditional Javanese elements to create a serene retreat.\n\nThe hotel boasts a range of amenities including a serene outdoor pool, a spa offering traditional treatments, and an on-site restaurant serving delicious local and international dishes. Guests can also participate in curated experiences such as temple tours and batik workshops. Secluded Sanctuary is ideal for those seeking a tranquil and culturally enriching stay."
   },
   {
     "name": "Secret Haven",
     "image": "/treasure-choose/pic-2.jpg",
     "location": "Bandung, Indonesia",
     "price": 280,
-    "isPopular": true
+    "isPopular": true,
+    "description": "Secret Haven in Bandung is a luxurious retreat set against the backdrop of stunning mountain views and lush landscapes. The resort offers an idyllic getaway, featuring beautifully appointed rooms and suites that provide a perfect blend of comfort and elegance. Each accommodation is designed with modern amenities and a touch of local flair, ensuring a memorable stay.\n\nGuests can enjoy a variety of facilities including a refreshing outdoor pool, a fully equipped fitness center, and a relaxing spa. The on-site restaurant serves an array of culinary delights, from local delicacies to international cuisine. Whether you're here for a romantic escape or a family vacation, Secret Haven offers a tranquil and luxurious experience in the heart of Bandung."
   },
   {
     "name": "Enchanted Retreat",
     "image": "/treasure-choose/pic-3.jpg",
     "location": "Surabaya, Indonesia",
     "price": 260,
-    "isPopular": false
+    "isPopular": false,
+    "description": "Enchanted Retreat in Surabaya is a serene oasis that combines modern luxury with natural beauty. Located away from the city's hustle, this retreat offers a peaceful environment where guests can unwind and rejuvenate. The rooms are spacious and elegantly decorated, featuring all the amenities needed for a comfortable stay.\n\nThe retreat offers a range of facilities including a tranquil spa, a beautiful outdoor pool, and a gourmet restaurant that serves both local and international cuisines. Guests can also enjoy various activities such as guided nature walks and cultural excursions. Enchanted Retreat is perfect for those looking to escape the everyday stress and immerse themselves in a serene and luxurious setting."
   }
 ]

@@ -4,34 +4,39 @@
     "image": "/most-picked/most-picked-big.png",
     "location": "Bali, Indonesia",
     "price": 250,
-    "isPopular": true
+    "isPopular": true,
+    "description": "Nestled in the heart of Bali, the Popular Paradise Hotel offers a luxurious escape for travelers seeking both relaxation and adventure. With its stunning beachfront location, guests can indulge in the tranquil beauty of the ocean while enjoying world-class amenities. Each room is elegantly designed to provide the utmost comfort, featuring modern furnishings and panoramic views of the tropical surroundings.\n\nBeyond the comforts of your room, the hotel boasts a range of facilities including a spa, infinity pool, and several gourmet restaurants serving international and local cuisine. Whether you're lounging by the pool, exploring the vibrant local culture, or engaging in water sports, Popular Paradise Hotel ensures a memorable stay in one of Indonesia's most sought-after destinations."
   },
   {
     "name": "Chosen Comfort",
     "image": "/most-picked/pic-1.jpg",
     "location": "Jakarta, Indonesia",
     "price": 220,
-    "isPopular": true
+    "isPopular": true,
+    "description": "Located in the bustling city of Jakarta, Chosen Comfort is the perfect blend of modern elegance and traditional Indonesian hospitality. The hotel is situated in a prime location, providing easy access to Jakarta's top attractions, shopping districts, and business centers. Guests are welcomed into a serene environment with stylish interiors and a calming ambiance, making it an ideal retreat after a day of exploring the city.\n\nChosen Comfort offers an array of amenities including a state-of-the-art fitness center, a relaxing spa, and a rooftop lounge with breathtaking views of the city skyline. The hotel's restaurant serves a variety of delectable dishes, ensuring that every meal is a culinary delight. Whether you're in Jakarta for business or leisure, Chosen Comfort provides a peaceful sanctuary amidst the city's vibrant energy."
   },
   {
     "name": "Top Pick Hotel",
     "image": "/most-picked/pic-2.jpg",
     "location": "Yogyakarta, Indonesia",
     "price": 200,
-    "isPopular": true
+    "isPopular": true,
+    "description": "Top Pick Hotel in Yogyakarta is a charming haven that combines traditional Javanese culture with contemporary luxury. Situated close to the historic sites of Yogyakarta, including the magnificent Borobudur and Prambanan temples, this hotel is an excellent base for cultural enthusiasts. The hotel's design reflects the rich heritage of the region, with intricately carved wooden details and lush gardens creating a serene atmosphere.\n\nGuests can enjoy a range of amenities such as a refreshing outdoor pool, a well-equipped fitness center, and a spa offering traditional Indonesian treatments. The on-site restaurant serves a fusion of local and international cuisine, providing a diverse dining experience. Whether you're here to explore Yogyakarta's rich history or simply relax in a tranquil setting, Top Pick Hotel offers an unforgettable stay."
   },
   {
     "name": "Favorite Stay",
     "image": "/most-picked/pic-3.jpg",
     "location": "Bandung, Indonesia",
     "price": 180,
-    "isPopular": true
+    "isPopular": true,
+    "description": "Favorite Stay in Bandung is renowned for its cozy ambiance and exceptional service, making it a top choice for travelers. The hotel is conveniently located near Bandung's popular attractions, including its famous shopping outlets and scenic mountain landscapes. Each room is thoughtfully designed to offer a comfortable and stylish retreat, featuring modern amenities and tasteful décor.\n\nIn addition to its comfortable accommodations, Favorite Stay offers a variety of facilities to enhance your visit. Guests can unwind at the spa, take a dip in the outdoor pool, or enjoy a delicious meal at the hotel's restaurant, which serves both local and international dishes. Whether you're visiting for a weekend getaway or an extended stay, Favorite Stay promises a warm and welcoming experience in the heart of Bandung."
   },
   {
     "name": "Most Loved Hotel",
     "image": "/most-picked/pic.jpg",
     "location": "Surabaya, Indonesia",
     "price": 210,
-    "isPopular": true
+    "isPopular": true,
+    "description": "Most Loved Hotel in Surabaya stands out for its sophisticated design and top-notch hospitality. Located in the vibrant city of Surabaya, the hotel provides easy access to major business districts, shopping centers, and cultural landmarks. The hotel's chic interiors and modern amenities make it a perfect choice for both business and leisure travelers.\n\nGuests can take advantage of the hotel's excellent facilities, including a well-equipped fitness center, a rejuvenating spa, and an inviting outdoor pool. The on-site restaurant offers a diverse menu, featuring both local specialties and international favorites. With its convenient location and superb amenities, Most Loved Hotel ensures a comfortable and memorable stay in Surabaya."
   }
 ]

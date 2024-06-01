@@ -4,9 +4,9 @@ import HeaderBookingStep from "@/components/molecules/headers/HeaderBookingStep"
 import React, { useState } from "react";
 
 import { Button } from "@/components/atoms/Button";
-import Step1 from "../molecules/steps/Step1";
-import Step2 from "../molecules/steps/Step2";
-import Step3 from "../molecules/steps/Step3";
+import Step1 from "@/components/molecules/steps/Step1";
+import Step2 from "@/components/molecules/steps/Step2";
+import Step3 from "@/components/molecules/steps/Step3";
 import { atom, useAtomValue, useSetAtom } from "jotai";
 import { useForm, FormProvider } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
