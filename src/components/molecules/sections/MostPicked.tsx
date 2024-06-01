@@ -2,16 +2,10 @@ import React from "react";
 
 import { Label } from "@/components/atoms/Label";
 import { ContainMostPicked } from "@/components/molecules/contains/ContainMostPicked";
-
-async function getData() {
-  const response = await fetch(
-    `${process.env.NEXT_PUBLIC_BASE_URL_STAGING}/json/most-picked.json`
-  );
-  return response.json();
-}
+import { getData } from "@/services/fetch";
 
 export default async function MostPicked() {
-  const data: TResponseGetData = await getData();
+  const data: TResponseGetData = await getData({ url: "most-picked.json" });
 
   return (
     <div className="mt-16">

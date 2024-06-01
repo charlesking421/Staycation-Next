@@ -1,16 +1,12 @@
 import React from "react";
 import { Label } from "@/components/atoms/Label";
 import { ContainTreasure } from "@/components/molecules/contains/ContainTreasure";
-
-async function getData() {
-  const response = await fetch(
-    `${process.env.NEXT_PUBLIC_BASE_URL_STAGING}/json/treasure-to-choose.json`
-  );
-  return response.json();
-}
+import { getData } from "@/services/fetch";
 
 export default async function SuggestionTreasure() {
-  const data: TResponseGetData = await getData();
+  const data: TResponseGetData = await getData({
+    url: "treasure-to-choose.json",
+  });
 
   return (
     <div className="mt-16">

@@ -1,16 +1,10 @@
 import React from "react";
 import { Label } from "@/components/atoms/Label";
 import { ContainHouseBeauty } from "@/components/molecules/contains/ContainHouseBeauty";
-
-async function getData() {
-  const response = await fetch(
-    `${process.env.NEXT_PUBLIC_BASE_URL_STAGING}/json/backyard.json`
-  );
-  return response.json();
-}
+import { getData } from "@/services/fetch";
 
 export default async function HouseBeauty() {
-  const data: TResponseGetData = await getData();
+  const data: TResponseGetData = await getData({ url: "backyard.json" });
 
   return (
     <div className="mt-16">
