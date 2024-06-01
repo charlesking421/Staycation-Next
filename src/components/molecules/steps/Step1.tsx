@@ -4,9 +4,9 @@ import { useAtomValue } from "jotai";
 
 import { LabelHeader } from "@/components/molecules/headers/HeaderBookingStep";
 import { InputWithLabel } from "@/components/atoms/InputWithLabel";
-import { atomBooking } from "@/components/molecules/sections/FormPickRoom";
 import { useFormContext } from "react-hook-form";
 import { Schema } from "@/components/pages/details-booking/BookingDestination";
+import { atomBooking } from "@/lib/jotai";
 
 export default function Step1() {
   const { image, name, location, total, night } = useAtomValue(atomBooking);

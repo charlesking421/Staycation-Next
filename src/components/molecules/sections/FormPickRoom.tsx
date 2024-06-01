@@ -4,19 +4,10 @@ import React from "react";
 import { Button } from "@/components/atoms/Button";
 import { Minus, Plus } from "lucide-react";
 import { DatePickerWithRange } from "@/components/atoms/Datepicker";
-import { atom, useAtomValue, useAtom, useSetAtom } from "jotai";
+import { useAtomValue, useAtom, useSetAtom } from "jotai";
 import Link from "next/link";
 import { detailCardItem } from "@/components/molecules/contains/ContainMostPicked";
-import { atomWithStorage } from "jotai/utils";
-
-export const atomUnit = atom(1);
-export const atomBooking = atomWithStorage("booking-detail", {
-  total: 0,
-  night: 1,
-  location: "",
-  name: "",
-  image: "",
-});
+import { atomBooking, atomUnit } from "@/lib/jotai";
 
 export default function FormPickRoom() {
   const [perNight, setPerNight] = useAtom(atomUnit);

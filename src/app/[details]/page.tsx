@@ -1,5 +1,10 @@
 import DetailRoom from "@/components/pages/details-room/DetailRoom";
+import MainLayout from "@/layouts/MainLayout";
 
 export default function page() {
-  return <DetailRoom />;
+  return (
+    <MainLayout>
+      <DetailRoom />;
+    </MainLayout>
+  );
 }
