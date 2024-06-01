@@ -3,17 +3,10 @@ import React from "react";
 import { Label } from "@/components/atoms/Label";
 import { ContainMostPicked } from "@/components/molecules/contains/ContainMostPicked";
 
-export type TResponseGetData = Array<{
-  name: string;
-  image: string;
-  location: string;
-  price: number;
-  description: string;
-  isPopular: boolean;
-}>;
-
 async function getData() {
-  const response = await fetch("http://localhost:3000/json/most-picked.json");
+  const response = await fetch(
+    `${process.env.NEXT_PUBLIC_BASE_URL_STAGING}/json/most-picked.json`
+  );
   return response.json();
 }
 

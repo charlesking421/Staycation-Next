@@ -2,18 +2,9 @@ import React from "react";
 import { Label } from "@/components/atoms/Label";
 import { ContainHotelLiving } from "@/components/molecules/contains/ContainHotelLiving";
 
-type TResponseGetData = Array<{
-  name: string;
-  image: string;
-  location: string;
-  price: number;
-  isPopular: boolean;
-  description: string;
-}>;
-
 async function getData() {
   const response = await fetch(
-    "http://localhost:3000/json/large-living-room.json"
+    `${process.env.NEXT_PUBLIC_BASE_URL_STAGING}/json/large-living-room.json`
   );
   return response.json();
 }
