@@ -5,7 +5,7 @@ import React from "react";
 export default function page() {
   return (
     <SecondaryLayout>
-      <BookingDestination />;
+      <BookingDestination />
     </SecondaryLayout>
   );
 }

@@ -50,15 +50,17 @@ export function DatePickerWithRange({
 
             {date?.from ? (
               date.to ? (
-                <>
+                <p className="lg:text-base text-sm ml-10">
                   {format(date.from, "LLL dd, y")} -{" "}
                   {format(date.to, "LLL dd, y")}
-                </>
+                </p>
               ) : (
                 format(date.from, "LLL dd, y")
               )
             ) : (
-              <p className="text-cyan-800 mb-4">Pick a Date</p>
+              <p className=" lg:text-base text-sm text-cyan-800 mb-4">
+                Pick a Date
+              </p>
             )}
           </Button>
         </PopoverTrigger>

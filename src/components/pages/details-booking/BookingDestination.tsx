@@ -17,11 +17,15 @@ import {
   schemaBankAccount,
   schemaInformation,
 } from "@/lib/schema";
-import { step } from "@/lib/jotai";
+import { atomBooking, detailCardItem, step } from "@/lib/jotai";
+import { useResetAtom } from "jotai/utils";
 
 const BookingDestination = () => {
   const currentStep = useAtomValue(step);
   const setStep = useSetAtom(step);
+  const resetDetailBooking = useResetAtom(atomBooking);
+  const resetDetailCard = useResetAtom(detailCardItem);
+
   const router = useRouter();
   const [isLoading, setIsLoading] = useState(false);
 
@@ -58,41 +62,43 @@ const BookingDestination = () => {
     }
   }, [currentStep]);
 
-  const handleCancel = () => {
+  const onHandleCancel = async () => {
     if (currentStep === 0) {
       router.back();
     } else if (currentStep !== 2) {
       setStep(0);
     } else {
-      router.push("/");
+      setStep(0);
+      resetDetailBooking();
+      resetDetailCard();
     }
   };
 
   return (
-    <main className="container mx-auto">
+    <main className="lg:container lg:mx-auto lg:px-0 px-4">
       <HeaderBookingStep step={3} currentStep={currentStep} />
       <FormProvider {...methods}>
         <form onSubmit={methods.handleSubmit(onSubmit)}>
           {renderStepComponent()}
 
           <div className="flex justify-center items-center mt-24">
-            <div className="flex flex-col gap-4 w-[20rem]">
+            <div className="flex flex-col gap-4 lg:w-[20rem] w-full">
               {currentStep !== 2 && (
                 <Button
                   type="submit"
                   size="lg"
-                  className="bg-cyan-800 text-base w-full"
+                  className="bg-cyan-800 lg:text-base text-sm w-full"
                 >
                   {isLoading ? "...Booking process" : "Continue to Book"}
                 </Button>
               )}
 
               <Button
-                onClick={handleCancel}
+                onClick={onHandleCancel}
                 size="lg"
                 disabled={isLoading}
                 type="button"
-                className={`text-base w-full ${
+                className={`w-full lg:text-base text-sm ${
                   currentStep === 2 ? "bg-cyan-800" : "bg-gray-200"
                 }`}
               >

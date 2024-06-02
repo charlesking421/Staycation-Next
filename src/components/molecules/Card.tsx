@@ -42,13 +42,19 @@ export default function Card({
 
           {hasBadge && (
             <div className="absolute top-0 right-0 bg-pink-600 px-6 py-3 rounded-2xl">
-              <p className="font-light text-white">{badgeLabel}</p>
+              <p className="font-light text-white lg:text-base text-xs">
+                {badgeLabel}
+              </p>
             </div>
           )}
           {hasInsideDescription && (
             <div className="absolute bottom-2 left-0 px-6 py-3 z-10">
-              <p className="font-semibold text-white text-2xl">{name}</p>
-              <p className="font-light text-white text-lg">{place}</p>
+              <p className="font-semibold text-white lg:text-2xl text-base">
+                {name}
+              </p>
+              <p className="font-light text-white lg:text-lg text-xs">
+                {place}
+              </p>
             </div>
           )}
         </Link>
@@ -59,8 +65,8 @@ export default function Card({
       </div>
       {hasBottomDescription && (
         <div onClick={onClick} className="mt-2">
-          <p className="text-lg text-cyan-800 mb-1">{name}</p>
-          <p className="text-base text-gray-400">{place}</p>
+          <p className="lg:text-lg text-sm text-cyan-800 mb-1">{name}</p>
+          <p className="lg:text-base text-xs text-gray-400">{place}</p>
         </div>
       )}
     </>

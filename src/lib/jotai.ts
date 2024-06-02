@@ -1,7 +1,7 @@
 import { atom } from "jotai";
 import { atomWithStorage } from "jotai/utils";
 
-export const step = atom<number>(0);
+export const step = atom<number>(2);
 export const atomUnit = atom<number>(1);
 export const atomBooking = atomWithStorage("booking-detail", {
   total: 0,

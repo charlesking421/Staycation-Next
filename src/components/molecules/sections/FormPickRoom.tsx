@@ -27,14 +27,18 @@ export default function FormPickRoom() {
   };
 
   return (
-    <div className="cols-span-1 p-8">
-      <div className="border rounded-xl border-gray-200 px-24 py-12">
-        <p className="text-xl text-cyan-800">Start Booking</p>
-        <p className="text-4xl text-gray-300 font-light mt-3">
+    <div className="lg:cols-span-1 lg:p-8 lg:mt-0 mt-6">
+      <div className="border rounded-xl border-gray-200 lg:px-24 lg:py-12 p-4">
+        <p className="lg:text-xl text-base text-cyan-800 font-semibold lg:font-normal">
+          Start Booking
+        </p>
+        <p className="lg:text-4xl text-2xl text-gray-300 font-light mt-3">
           <span className="text-cyan-500 font-semibold">${price}</span> / night
         </p>
         <div className="mt-10">
-          <p className="text-cyan-800 mb-4">How long you will stay?</p>
+          <p className="text-cyan-800 mb-4 lg:text-base text-sm">
+            How long you will stay?
+          </p>
           <div className="flex bg-gray-100 rounded-sm justify-between items-center">
             <Button
               onClick={() => {
@@ -47,7 +51,7 @@ export default function FormPickRoom() {
               <Minus />
             </Button>
             <span
-              className={`text-2xl ${
+              className={`lg:text-2xl text-base ${
                 perNight <= 1 ? " text-gray-300" : "text-cyan-800"
               }`}
             >
@@ -67,10 +71,10 @@ export default function FormPickRoom() {
         </div>
 
         <div className="mt-4">
-          <p className="text-cyan-800 mb-4">Pick a Date</p>
+          <p className="text-cyan-800 mb-4 lg:text-base text-sm">Pick a Date</p>
           <DatePickerWithRange howLong={perNight} />
 
-          <p className="text-base font-light text-gray-300 mt-3">
+          <p className="lg:text-base text-sm font-light text-gray-300 mt-3">
             You will pay <span className="text-cyan-800">${totalPayment}</span>{" "}
             USD per
             <span className="text-cyan-800"> {perNight} nights</span>
@@ -80,7 +84,7 @@ export default function FormPickRoom() {
               onClick={onSetBookingPlace}
               disabled={perNight <= 0}
               size="lg"
-              className="w-full bg-cyan-600 mt-12 text-base"
+              className="w-full bg-cyan-600 mt-12 lg:text-base"
             >
               Continue to Book
             </Button>

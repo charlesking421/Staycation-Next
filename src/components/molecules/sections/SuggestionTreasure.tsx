@@ -9,8 +9,8 @@ export default async function SuggestionTreasure() {
   });
 
   return (
-    <div className="mt-16">
-      <Label className="text-lg text-cyan-800 font-semibold">
+    <div className="lg:mt-16 mt-6">
+      <Label className="lg:text-lg text-base text-cyan-800 font-semibold">
         Treasure to Choose
       </Label>
 

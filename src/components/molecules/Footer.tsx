@@ -1,89 +1,63 @@
 import React from "react";
 
+const data = [
+  {
+    title: "For Beginners",
+    description: ["New Account", "Start Booking a Room", " Use Payments"],
+  },
+  {
+    title: "Explore Us",
+    description: [
+      "Cookies Policy",
+      "Our Careers",
+      " Privacy",
+      "Terms & Conditions",
+    ],
+  },
+  {
+    title: "Connect Us",
+    description: [
+      "diko.dev99@gmail.com",
+      "0823 - 8489 - 8030",
+      "Privacy",
+      "Staycation, Bandar Lampung",
+    ],
+  },
+];
+
 export default function Footer() {
   return (
     <footer className="text-gray-300 py-10 mt-24">
       <div className="container mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
         <div>
-          <h5 className="text-3xl font-semibold mb-4 text-black">
+          <h5 className="lg:text-3xl text-2xl font-semibold mb-4 text-black">
             <span className="text-cyan-800">Stay</span>cation
           </h5>
-          <p>We kaboom your beauty holiday instantly and memorable.</p>
+          <p className="lg:text-lg text-xs">
+            We kaboom your beauty holiday instantly and memorable.
+          </p>
         </div>
-        <div>
-          <h5 className="text-lg font-semibold mb-4 text-cyan-800">
-            For Beginners
-          </h5>
-          <ul>
-            <li className="mb-2">
-              <a href="#" className="hover:text-cyan-700">
-                New Account
-              </a>
-            </li>
-            <li className="mb-2">
-              <a href="#" className="hover:text-cyan-700">
-                Start Booking a Room
-              </a>
-            </li>
-            <li className="mb-2">
-              <a href="#" className="hover:text-cyan-700">
-                Use Payments
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h5 className="text-lg font-semibold mb-4 text-cyan-800">
-            Explore Us
-          </h5>
-          <ul>
-            <li className="mb-2">
-              <a href="#" className="hover:text-cyan-700">
-                Cookies Policy
-              </a>
-            </li>
-            <li className="mb-2">
-              <a href="#" className="hover:text-cyan-700">
-                Our Careers
-              </a>
-            </li>
-            <li className="mb-2">
-              <a href="#" className="hover:text-cyan-700">
-                Privacy
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-cyan-700">
-                Terms & Conditions
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h5 className="text-lg font-semibold mb-4 text-cyan-800">
-            Connect Us
-          </h5>
-          <ul>
-            <li className="mb-2">
-              <a href="#" className="hover:text-cyan-700">
-                diko.dev99@gmail.com
-              </a>
-            </li>
-            <li className="mb-2">
-              <a href="#" className="hover:text-cyan-700">
-                0823 - 8489 - 8030
-              </a>
-            </li>
-            <li className="mb-2">
-              <a href="#" className="hover:text-cyan-700">
-                Staycation, Bandar Lampung{" "}
-              </a>
-            </li>
-          </ul>
-        </div>
+        {data.map((item) => (
+          <div key={item.title}>
+            <h5 className="lg:text-lg text-base font-semibold mb-4 text-cyan-800">
+              {item.title}
+            </h5>
+            <ul className="lg:text-xl text-xs">
+              {item.description.map((desc) => (
+                <li className="mb-2" key={desc}>
+                  <a href="#" className="hover:text-cyan-700">
+                    {desc}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </div>
       <div className="text-center mt-12 mb-10">
-        <p>&copy; Copyright 2024 • All rights reserved • Staycation</p>
+        <p className="lg:text-base text-xs">
+          &copy; Copyright 2024 • All rights reserved • Staycation
+        </p>
       </div>
     </footer>
   );

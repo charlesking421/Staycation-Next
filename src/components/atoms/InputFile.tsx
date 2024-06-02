@@ -23,7 +23,7 @@ export function InputFile({
 }: TInputWithLabel) {
   return (
     <div className="grid w-full items-center">
-      <Label className="text-base text-cyan-800" htmlFor={type}>
+      <Label className="lg:text-base text-sm text-cyan-800" htmlFor={type}>
         {label}
       </Label>
       <Input

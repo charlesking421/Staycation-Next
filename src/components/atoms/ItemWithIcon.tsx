@@ -14,7 +14,7 @@ export default function ItemWithIcon({
   return (
     <div className="flex-col flex gap-2">
       {children}
-      <p className="text-base text-gray-500">
+      <p className="lg:text-base text-xs text-gray-500">
         <span className="text-cyan-600 font-semibold">{total}</span> {label}
       </p>
     </div>

@@ -10,8 +10,8 @@ export default async function ApartmentWithKitchen() {
   });
 
   return (
-    <div className="mt-16">
-      <Label className="text-lg text-cyan-800 font-semibold">
+    <div className="lg:mt-16 mt-12">
+      <Label className="lg:text-lg mb-4 text-base text-cyan-800 font-semibold">
         Apartments with kitchen set
       </Label>
 

@@ -25,16 +25,18 @@ export default function Step2() {
         description="Please fill up the blank fields below"
       />
 
-      <div className="mt-24 grid grid-cols-2 gap-8">
-        <div className="col-span-1 border-r-2 border-0 border-gray-200 pl-20">
-          <p className="text-lg text-cyan-800">Payment transfer:</p>
-          <p className="text-base text-cyan-800 mt-5">
+      <div className="lg:mt-24 mt-8 grid grid-cols-2 gap-8">
+        <div className="lg:col-span-1 col-span-2 lg:border-r-2 lg:border-0 border-gray-200 lg:pl-20">
+          <p className="lg:text-lg text-base text-cyan-800">
+            Payment transfer:
+          </p>
+          <p className="lg:text-base text-sm text-cyan-800 mt-5">
             Tax: <strong>10%</strong>
           </p>
-          <p className="text-base text-cyan-800 my-3">
+          <p className="lg:text-base text-sm text-cyan-800 my-3">
             Sub total: <strong>${subtotal} USD</strong>
           </p>
-          <p className="text-base text-cyan-800">
+          <p className="lg:text-base text-sm text-cyan-800">
             Total: <strong>${total} USD</strong>
           </p>
 
@@ -51,13 +53,13 @@ export default function Step2() {
             name="Diko Mahendra"
           />
         </div>
-        <div className="col-span-1 space-y-5 pr-[12rem]">
+        <div className="lg:col-span-1 col-span-2 lg:space-y-5 space-y-3 lg:pr-[12rem] lg:mt-0 mt-8">
           <InputFile
             required
             register={register}
             message={errors?.upload_invoice?.message as string}
             name="upload_invoice"
-            label="Upload Bukti Transfer"
+            label="Upload Invoice"
             type="file"
             placeholder="Please type here ..."
           />

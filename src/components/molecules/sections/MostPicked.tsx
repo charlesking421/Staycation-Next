@@ -9,9 +9,11 @@ export default async function MostPicked() {
 
   return (
     <div className="mt-16">
-      <Label className="text-lg text-cyan-800 font-semibold">Most Picked</Label>
+      <Label className="lg:text-lg text-base text-cyan-800 font-semibold">
+        Most Picked
+      </Label>
 
-      <div className="grid grid-cols-12 gap-4 mt-5">
+      <div className="grid lg:grid-cols-12 gap-4 mt-5">
         <ContainMostPicked data={data} />
       </div>
     </div>

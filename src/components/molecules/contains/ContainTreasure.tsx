@@ -14,8 +14,8 @@ export function ContainTreasure({ data }: { data: TResponseGetData }) {
   };
 
   return (
-    <ScrollArea className="w-full whitespace-nowrap rounded-md">
-      <div className="flex w-full space-x-4 p-4">
+    <ScrollArea className="w-full whitespace-nowrap rounded-md mt-4">
+      <div className="flex w-full lg:space-x-4 lg:p-4 space-x-2">
         {data.map((item, index) => (
           <div key={index}>
             <Card

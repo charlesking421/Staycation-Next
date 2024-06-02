@@ -20,9 +20,9 @@ export default function BankAccount({
         <Image fill alt="image-bank-bca" src={images} />
       </div>
       <div>
-        <p className="text-base text-cyan-900">{bankName}</p>
-        <p className="text-base text-cyan-900">{noRek}</p>
-        <p className="text-base text-cyan-900">{name}</p>
+        <p className="lg:text-base text-sm text-cyan-900">{bankName}</p>
+        <p className="lg:text-base text-sm text-cyan-900">{noRek}</p>
+        <p className="lg:text-base text-sm text-cyan-900">{name}</p>
       </div>
     </div>
   );

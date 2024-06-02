@@ -15,19 +15,19 @@ export default function HeaderBreadcrumb() {
   const { name, location } = useAtomValue(detailCardItem);
 
   return (
-    <header className="flex items-center justify-center text-center relative mt-16">
-      <div className="absolute left-0">
+    <header className="flex items-center justify-center text-center relative lg:mt-16 mt-6">
+      <div className="lg:absolute left-0 hidden lg:flex">
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
-              <BreadcrumbLink href="/" className="text-base">
+              <BreadcrumbLink href="/" className="lg:text-base text-xs">
                 Home
               </BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
               <BreadcrumbLink
-                className="text-cyan-800 text-base"
+                className="text-cyan-800 lg:text-base text-xs"
                 href="/components"
               >
                 {name}
@@ -37,8 +37,10 @@ export default function HeaderBreadcrumb() {
         </Breadcrumb>
       </div>
       <div>
-        <p className="text-4xl text-cyan-800 font-semibold">{name}</p>
-        <p className="text-base text-gray-400 mt-2">{location}</p>
+        <p className="lg:text-4xl text-lg text-cyan-800 font-semibold">
+          {name}
+        </p>
+        <p className="lg:text-base text-sm text-gray-400 lg:mt-2">{location}</p>
       </div>
     </header>
   );

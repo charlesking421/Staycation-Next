@@ -7,7 +7,7 @@ import TestimonyMain from "@/components/molecules/testimony/TestimonyMain";
 
 export default function HomeComponent() {
   return (
-    <main className="mx-auto container">
+    <main className="lg:mx-auto lg:container lg:px-0 px-4">
       <Hero />
       <MostPicked />
       <HouseBeauty />

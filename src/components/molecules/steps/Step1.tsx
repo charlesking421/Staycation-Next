@@ -5,15 +5,15 @@ import { useAtomValue } from "jotai";
 import { LabelHeader } from "@/components/molecules/headers/HeaderBookingStep";
 import { InputWithLabel } from "@/components/atoms/InputWithLabel";
 import { useFormContext } from "react-hook-form";
-import { Schema } from "@/components/pages/details-booking/BookingDestination";
 import { atomBooking } from "@/lib/jotai";
+import { SchemaInformation } from "@/lib/schema";
 
 export default function Step1() {
   const { image, name, location, total, night } = useAtomValue(atomBooking);
   const {
     register,
     formState: { errors },
-  } = useFormContext<Schema>();
+  } = useFormContext<SchemaInformation>();
 
   return (
     <>
@@ -21,8 +21,8 @@ export default function Step1() {
         label=" Booking Information"
         description="Please fill up the blank fields below"
       />
-      <div className="mt-24 grid grid-cols-2 gap-8">
-        <div className="col-span-1 border-r-2 border-0 border-gray-200 pr-12">
+      <div className="lg:mt-24 mt-14 grid grid-cols-2 lg:gap-8">
+        <div className="lg:col-span-1 col-span-2 lg:border-r-2 border-0 lg:border-gray-200 lg:pr-12">
           <div className="relative aspect-video">
             <Image
               src={String(image) || "/detail-booking.png"}
@@ -32,20 +32,22 @@ export default function Step1() {
             />
           </div>
 
-          <div className="flex justify-between items-center mt-8">
+          <div className="flex justify-between items-center lg:mt-8 mt-4">
             <div>
-              <p className="capitalize text-cyan-800 text-2xl font-semibold">
+              <p className="capitalize text-cyan-800 lg:text-2xl text-lg font-semibold">
                 {name}
               </p>
-              <p className="capitalize text-gray-300 text-lg">{location}</p>
+              <p className="capitalize text-gray-300 lg:text-lg text-sm">
+                {location}
+              </p>
             </div>
-            <p className="text-2xl font-light text-gray-300">
+            <p className="lg:text-2xl text-base font-light text-gray-300">
               <span className="text-cyan-800 font-semibold">${total} USD</span>{" "}
               / {night} night
             </p>
           </div>
         </div>
-        <div className="col-span-1 space-y-5 pr-[12rem]">
+        <div className="lg:col-span-1 col-span-2 lg:space-y-5 space-y-3 lg:pr-[12rem] lg:mt-0 mt-8">
           <InputWithLabel
             register={register}
             name="first_name"

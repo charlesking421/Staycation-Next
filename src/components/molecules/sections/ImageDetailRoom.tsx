@@ -8,9 +8,9 @@ import { detailCardItem } from "@/components/molecules/contains/ContainMostPicke
 export default function ImageDetailRoom() {
   const { image } = useAtomValue(detailCardItem);
   return (
-    <div className="grid grid-cols-2 gap-8 mt-16">
-      <div className="col-span-1">
-        <div className="relative w-full h-full">
+    <div className="grid lg:grid-cols-2 lg:gap-8 lg:mt-16">
+      <div className="lg:col-span-1">
+        <div className="relative aspect-square lg:w-full lg:h-full">
           <Image
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             src={image ?? "/detail-booking.png"}
@@ -21,7 +21,7 @@ export default function ImageDetailRoom() {
           />
         </div>
       </div>
-      <div className="col-span-1 grid-rows-2 space-y-8">
+      <div className="lg:col-span-1 lg:grid-rows-2 lg:space-y-8">
         <div>
           <div className="relative aspect-video">
             <Image

@@ -4,7 +4,7 @@ import MainLayout from "@/layouts/MainLayout";
 export default function page() {
   return (
     <MainLayout>
-      <DetailRoom />;
+      <DetailRoom />
     </MainLayout>
   );
 }
