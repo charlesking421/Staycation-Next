@@ -4,13 +4,19 @@ import { InputWithLabel } from "@/components/atoms/InputWithLabel";
 import { InputFile } from "@/components/atoms/InputFile";
 import BankAccount from "@/components/atoms/BankAccount";
 import { useFormContext } from "react-hook-form";
-import { Schema2 } from "@/components/pages/details-booking/BookingDestination";
+import { SchemaBankAccount } from "@/lib/schema";
+import { useAtomValue } from "jotai";
+import { atomBooking } from "@/lib/jotai";
 
 export default function Step2() {
   const {
     register,
     formState: { errors },
-  } = useFormContext<Schema2>();
+  } = useFormContext<SchemaBankAccount>();
+
+  const { total } = useAtomValue(atomBooking);
+
+  const subtotal = total - total * 0.1;
 
   return (
     <>
@@ -21,15 +27,15 @@ export default function Step2() {
 
       <div className="mt-24 grid grid-cols-2 gap-8">
         <div className="col-span-1 border-r-2 border-0 border-gray-200 pl-20">
-          <p className="text-lg text-cyan-800">Transfer Pembayaran:</p>
+          <p className="text-lg text-cyan-800">Payment transfer:</p>
           <p className="text-base text-cyan-800 mt-5">
             Tax: <strong>10%</strong>
           </p>
           <p className="text-base text-cyan-800 my-3">
-            Sub total: <strong>$480 USD</strong>
+            Sub total: <strong>${subtotal} USD</strong>
           </p>
           <p className="text-base text-cyan-800">
-            Total: <strong>$580 USD</strong>
+            Total: <strong>${total} USD</strong>
           </p>
 
           <BankAccount
@@ -59,7 +65,7 @@ export default function Step2() {
             required
             name="bank"
             register={register}
-            label="Asal Bank"
+            label="Bank Name"
             message={errors?.bank?.message as string}
             placeholder="Please type here ..."
           />
@@ -67,7 +73,7 @@ export default function Step2() {
             required
             name="account_name"
             register={register}
-            label="Nama Pengirim"
+            label="Account Name"
             message={errors?.account_name?.message as string}
             placeholder="Please type here ..."
           />

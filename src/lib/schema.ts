@@ -1,9 +1,26 @@
 import { z } from "zod";
 
 const schemaInformation = z.object({
-  first_name: z.string().min(2).max(20),
-  last_name: z.string().min(2).max(20),
-  email: z.string().email(),
+  first_name: z
+    .string()
+    .min(2, {
+      message: "First name is required",
+    })
+    .max(20, { message: "Max 20 characters" }),
+  last_name: z
+    .string()
+    .min(2, {
+      message: "Last name is required",
+    })
+    .max(20, {
+      message: "Max 20 characters",
+    }),
+  email: z
+    .string()
+    .min(4, {
+      message: "Email is required",
+    })
+    .email(),
   phone_number: z.string().superRefine((value, ctx) => {
     if (!value) {
       ctx.addIssue({
@@ -27,7 +44,7 @@ const uploadInvoice = z.instanceof(FileList).superRefine((val, ctx) => {
   if (val.length === 0) {
     ctx.addIssue({
       code: z.ZodIssueCode.custom,
-      message: `Kindly upload your invoice`,
+      message: `Invoice is required`,
     });
     return;
   }
@@ -51,8 +68,22 @@ const uploadInvoice = z.instanceof(FileList).superRefine((val, ctx) => {
 
 const schemaBankAccount = z.object({
   upload_invoice: uploadInvoice,
-  bank: z.string().min(2).max(20),
-  account_name: z.string().min(2).max(20),
+  bank: z
+    .string()
+    .min(2, {
+      message: "Bank Name is required",
+    })
+    .max(50, {
+      message: "Max 50 characters",
+    }),
+  account_name: z
+    .string()
+    .min(2, {
+      message: "Account Name is required",
+    })
+    .max(50, {
+      message: "Max 50 characters",
+    }),
 });
 
 export type SchemaInformation = z.infer<typeof schemaInformation>;

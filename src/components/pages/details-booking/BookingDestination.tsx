@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import React, { useState } from "react";
+import React, { useState, useCallback } from "react";
 import { useAtomValue, useSetAtom } from "jotai";
 import { useForm, FormProvider } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -19,31 +19,35 @@ import {
 } from "@/lib/schema";
 import { step } from "@/lib/jotai";
 
-export default function BookingDestination() {
-  const _step = useAtomValue(step);
-  const setStepValue = useSetAtom(step);
+const BookingDestination = () => {
+  const currentStep = useAtomValue(step);
+  const setStep = useSetAtom(step);
   const router = useRouter();
   const [isLoading, setIsLoading] = useState(false);
 
+  const getSchema = useCallback(() => {
+    return currentStep === 0 ? schemaInformation : schemaBankAccount;
+  }, [currentStep]);
+
   const methods = useForm<SchemaInformation>({
-    resolver: zodResolver(_step === 0 ? schemaInformation : schemaBankAccount),
+    resolver: zodResolver(getSchema()),
   });
 
   const onSubmit = () => {
-    if (_step <= 0) {
-      setStepValue(_step + 1);
-    } else if (_step === 1) {
+    if (currentStep < 2) {
+      setStep(currentStep + 1);
+    } else {
       setIsLoading(true);
 
       setTimeout(() => {
-        setStepValue(_step + 1);
+        setStep(currentStep + 1);
         setIsLoading(false);
       }, 3000);
     }
   };
 
-  const switchStep = () => {
-    switch (_step) {
+  const renderStepComponent = useCallback(() => {
+    switch (currentStep) {
       case 1:
         return <Step2 />;
       case 2:
@@ -52,13 +56,13 @@ export default function BookingDestination() {
       default:
         return <Step1 />;
     }
-  };
+  }, [currentStep]);
 
-  const onCancel = () => {
-    if (_step === 0) {
+  const handleCancel = () => {
+    if (currentStep === 0) {
       router.back();
-    } else if (_step !== 2) {
-      setStepValue(0);
+    } else if (currentStep !== 2) {
+      setStep(0);
     } else {
       router.push("/");
     }
@@ -66,37 +70,37 @@ export default function BookingDestination() {
 
   return (
     <main className="container mx-auto">
-      <HeaderBookingStep step={3} currentStep={_step} />
+      <HeaderBookingStep step={3} currentStep={currentStep} />
       <FormProvider {...methods}>
         <form onSubmit={methods.handleSubmit(onSubmit)}>
-          {switchStep()}
+          {renderStepComponent()}
 
           <div className="flex justify-center items-center mt-24">
             <div className="flex flex-col gap-4 w-[20rem]">
-              {_step !== 2 && (
+              {currentStep !== 2 && (
                 <Button
                   type="submit"
                   size="lg"
                   className="bg-cyan-800 text-base w-full"
                 >
-                  {isLoading
-                    ? "...loading"
-                    : _step >= 0
-                    ? "Continue to Book"
-                    : "Next"}
+                  {isLoading ? "...Booking process" : "Continue to Book"}
                 </Button>
               )}
 
               <Button
-                onClick={onCancel}
+                onClick={handleCancel}
                 size="lg"
                 disabled={isLoading}
                 type="button"
                 className={`text-base w-full ${
-                  _step === 2 ? "bg-cyan-800" : "bg-gray-200"
+                  currentStep === 2 ? "bg-cyan-800" : "bg-gray-200"
                 }`}
               >
-                {_step === 2 ? "Back to Home" : _step === 0 ? "Cancel" : "Back"}
+                {currentStep === 2
+                  ? "Back to Home"
+                  : currentStep === 0
+                  ? "Cancel"
+                  : "Back"}
               </Button>
             </div>
           </div>
@@ -104,4 +108,6 @@ export default function BookingDestination() {
       </FormProvider>
     </main>
   );
-}
+};
+
+export default BookingDestination;

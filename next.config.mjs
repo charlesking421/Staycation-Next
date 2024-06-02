@@ -8,6 +8,9 @@ const nextConfig = {
       {
         hostname: "images.unsplash.com",
       },
+      {
+        hostname: "taskpro-website.vercel.app",
+      },
     ],
   },
 };
