@@ -30,5 +30,29 @@
     "price": 270,
     "isPopular": true,
     "description": "Green Oasis Hotel adalah tempat persembunyian yang tenang di tengah hiruk-pikuk Jakarta. Hotel ini menawarkan halaman belakang yang luas dengan tanaman hijau yang subur, menciptakan suasana damai dan menyegarkan. Desain yang elegan dan fasilitas yang lengkap memastikan pengalaman menginap yang luar biasa.\n\nPara tamu dapat menikmati berbagai fasilitas seperti kolam renang outdoor, area lounge, dan spa mewah. Halaman belakang yang indah menyediakan tempat yang sempurna untuk bersantai, dengan banyak area duduk dan taman yang rimbun. Hotel ini juga menawarkan layanan kebugaran dan yoga untuk menjaga keseimbangan tubuh dan pikiran.\n\nDengan lokasinya yang strategis, Green Oasis Hotel memberikan akses mudah ke berbagai pusat perbelanjaan, restoran, dan hiburan di Jakarta. Hotel ini adalah tempat ideal bagi mereka yang mencari kenyamanan modern dengan sentuhan alam. Setiap momen di Green Oasis Hotel dirancang untuk memberikan relaksasi dan kebahagiaan."
+  },
+  {
+    "name": "Tropical Serenity",
+    "image": "/kitchen-set/pic-1.jpg",
+    "location": "Bali, Indonesia",
+    "price": 350,
+    "isPopular": true,
+    "description": "Tropical Serenity di Bali menawarkan pengalaman menginap yang mewah dengan suasana tropis yang menenangkan. Terletak di dekat pantai, hotel ini memiliki taman yang indah dengan berbagai tanaman tropis dan kolam renang yang menghadap ke laut.\n\nFasilitas hotel mencakup spa mewah, restoran yang menyajikan makanan internasional dan lokal, serta berbagai aktivitas seperti yoga dan snorkeling. Setiap kamar dirancang dengan gaya modern dan dilengkapi dengan balkon pribadi yang menawarkan pemandangan spektakuler.\n\nTropical Serenity adalah pilihan sempurna bagi mereka yang mencari liburan romantis atau tempat untuk bersantai dan menikmati keindahan alam Bali. Pengalaman menginap di sini akan menjadi momen yang tak terlupakan."
+  },
+  {
+    "name": "Mountain Escape",
+    "image": "/kitchen-set/pic-1.jpg",
+    "location": "Malang, Indonesia",
+    "price": 230,
+    "isPopular": false,
+    "description": "Mountain Escape di Malang adalah resor yang sempurna bagi mereka yang mencari ketenangan dan udara segar pegunungan. Terletak di dataran tinggi, hotel ini menawarkan pemandangan pegunungan yang menakjubkan dan suasana yang sejuk.\n\nFasilitas di Mountain Escape meliputi kolam renang indoor, pusat kebugaran, dan restoran yang menyajikan hidangan lezat. Para tamu juga dapat mengikuti aktivitas luar ruangan seperti hiking dan bersepeda.\n\nDengan kamar yang nyaman dan layanan yang ramah, Mountain Escape memberikan pengalaman menginap yang menenangkan dan menyegarkan. Lokasinya yang strategis juga memudahkan akses ke berbagai atraksi wisata di Malang."
+  },
+  {
+    "name": "Island Paradise",
+    "image": "/kitchen-set/pic-1.jpg",
+    "location": "Gili Trawangan, Indonesia",
+    "price": 300,
+    "isPopular": true,
+    "description": "Island Paradise di Gili Trawangan menawarkan penginapan mewah di salah satu pulau terindah di Indonesia. Dengan pantai berpasir putih dan air laut yang jernih, hotel ini merupakan tempat ideal untuk liburan tropis.\n\nFasilitas hotel mencakup villa pribadi dengan kolam renang, spa, dan restoran tepi pantai yang menyajikan makanan laut segar. Para tamu dapat menikmati berbagai aktivitas seperti menyelam, snorkeling, dan bersepeda keliling pulau.\n\nIsland Paradise adalah destinasi yang sempurna untuk mereka yang mencari kombinasi antara kemewahan dan petualangan. Pengalaman menginap di sini akan membuat setiap tamu merasa seperti berada di surga."
   }
 ]

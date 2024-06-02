@@ -30,5 +30,29 @@
     "price": 220,
     "isPopular": false,
     "description": "City Center Apartment adalah pilihan ideal bagi mereka yang menginginkan kehidupan urban yang dinamis di Surabaya. Apartemen ini terletak di pusat kota, memberikan akses mudah ke berbagai fasilitas umum, perkantoran, dan pusat perbelanjaan. Desain modern dengan sentuhan elegan menciptakan ruang yang nyaman dan fungsional bagi setiap penghuni.\n\nFasilitas lengkap seperti kolam renang, pusat kebugaran, dan lounge membuat City Center Apartment menjadi tempat tinggal yang sempurna bagi mereka yang menghargai kenyamanan dan kemudahan. Keamanan 24 jam dan layanan manajemen profesional memastikan setiap kebutuhan penghuni terpenuhi dengan baik dan aman.\n\nLokasi strategis City Center Apartment memungkinkan penghuni menikmati berbagai pilihan hiburan dan kuliner di Surabaya. Dengan lingkungan yang hidup dan berbagai aktivitas menarik di sekitarnya, apartemen ini menawarkan gaya hidup urban yang aktif dan penuh dengan berbagai kemudahan."
+  },
+  {
+    "name": "Sunset Villa",
+    "image": "/kitchen-set/pic-3.jpg",
+    "location": "Seminyak, Bali, Indonesia",
+    "price": 350,
+    "isPopular": true,
+    "description": "Sunset Villa di Seminyak, Bali, menawarkan pengalaman menginap mewah dengan pemandangan matahari terbenam yang menakjubkan. Setiap vila dilengkapi dengan kolam renang pribadi, ruang tamu luas, dan dapur modern. Fasilitas lainnya termasuk layanan spa, pusat kebugaran, dan restoran bintang lima yang menyajikan hidangan lokal dan internasional.\n\nLokasi strategisnya memungkinkan akses mudah ke pantai, butik-butik eksklusif, dan tempat hiburan malam di Seminyak. Sunset Villa adalah pilihan ideal bagi mereka yang mencari kenyamanan dan kemewahan di salah satu destinasi paling populer di Bali.\n\nDengan suasana yang tenang dan privat, vila ini sempurna untuk liburan romantis atau liburan keluarga. Layanan concierge 24 jam siap membantu setiap kebutuhan Anda selama menginap."
+  },
+  {
+    "name": "Urban Loft",
+    "image": "/kitchen-set/pic-1.jpg",
+    "location": "Kuta, Bali, Indonesia",
+    "price": 270,
+    "isPopular": true,
+    "description": "Urban Loft adalah apartemen modern yang terletak di jantung Kuta, Bali. Menawarkan akses mudah ke pantai Kuta yang terkenal, berbagai restoran, dan pusat perbelanjaan. Apartemen ini memiliki desain kontemporer dengan fasilitas lengkap seperti kolam renang rooftop, gym, dan lounge.\n\nSetiap unit di Urban Loft dirancang dengan detail yang tinggi untuk memberikan kenyamanan maksimal bagi para penghuni. Balkon pribadi dengan pemandangan kota menambah daya tarik apartemen ini.\n\nUrban Loft cocok untuk mereka yang mencari gaya hidup dinamis di salah satu lokasi paling ramai di Bali. Layanan keamanan 24 jam dan akses mudah ke transportasi umum membuat tinggal di sini nyaman dan aman."
+  },
+  {
+    "name": "Lakeside Residence",
+    "image": "/kitchen-set/pic-1.jpg",
+    "location": "Bogor, Indonesia",
+    "price": 200,
+    "isPopular": false,
+    "description": "Lakeside Residence di Bogor menawarkan suasana tenang dan pemandangan danau yang indah. Apartemen ini dikelilingi oleh alam hijau, menciptakan lingkungan yang sejuk dan menyegarkan. Fasilitas yang tersedia meliputi area bermain anak, jogging track, dan kolam renang.\n\nDesain interior yang elegan dengan sentuhan alami menciptakan ruang yang nyaman dan menyenangkan untuk ditinggali. Lokasinya yang strategis memberikan akses mudah ke berbagai destinasi wisata di Bogor, termasuk kebun raya dan berbagai restoran.\n\nLakeside Residence adalah pilihan ideal bagi mereka yang mencari ketenangan alam dengan kenyamanan modern. Tempat tinggal ini cocok untuk keluarga atau individu yang ingin menikmati kehidupan yang seimbang antara alam dan kota."
   }
 ]

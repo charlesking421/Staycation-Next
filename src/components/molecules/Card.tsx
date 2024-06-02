@@ -41,7 +41,7 @@ export default function Card({
           />
 
           {hasBadge && (
-            <div className="absolute top-0 right-0 bg-pink-600 px-6 py-3 rounded-es-2xl">
+            <div className="absolute top-0 right-0 bg-pink-600 px-6 py-3 rounded-2xl">
               <p className="font-light text-white">{badgeLabel}</p>
             </div>
           )}

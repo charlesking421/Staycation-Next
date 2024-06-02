@@ -9,3 +9,12 @@ export const atomBooking = atomWithStorage("booking-detail", {
   name: "",
   image: "",
 });
+
+export const detailCardItem = atomWithStorage<TResponseGetData[0]>("detail", {
+  name: "",
+  image: "",
+  location: "",
+  price: 0,
+  description: "",
+  isPopular: false,
+});

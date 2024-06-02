@@ -30,5 +30,29 @@
     "price": 280,
     "isPopular": true,
     "description": "Elegant Stay offers a sophisticated retreat with its stylish living rooms and modern amenities. Located in the vibrant city of Surabaya, this boutique hotel combines contemporary design with warm hospitality, providing guests with a memorable and comfortable stay.\n\nEach room at Elegant Stay is thoughtfully designed to create a cozy and inviting atmosphere. The spacious living rooms are tastefully decorated with chic furnishings and feature expansive windows that flood the space with natural light. Guests can relax and unwind in these elegant surroundings, enjoying the perfect blend of comfort and style.\n\nIn addition to its well-appointed accommodations, Elegant Stay also offers a range of personalized services, including 24-hour room service, complimentary breakfast, and airport transfers. Whether you're traveling for business or leisure, this charming hotel provides everything you need for a delightful stay in Surabaya."
+  },
+  {
+    "name": "Oceanfront Oasis",
+    "image": "/kitchen-set/pic-1.jpg",
+    "location": "Lombok, Indonesia",
+    "price": 320,
+    "isPopular": true,
+    "description": "Oceanfront Oasis offers an unparalleled beachfront experience with luxurious living spaces and breathtaking ocean views. Located on the pristine shores of Lombok, this resort is perfect for those seeking relaxation and adventure in a tropical paradise.\n\nEach suite at Oceanfront Oasis is designed to maximize comfort and elegance, featuring spacious living rooms with floor-to-ceiling windows that offer panoramic views of the sea. The decor combines modern sophistication with local artistic elements, creating a serene and inviting atmosphere.\n\nGuests can enjoy a range of premium amenities including a private beach, infinity pool, world-class spa, and gourmet dining options. Whether you're lounging by the beach or exploring the vibrant marine life, Oceanfront Oasis provides a perfect blend of luxury and natural beauty for an unforgettable stay."
+  },
+  {
+    "name": "Mountain Majesty",
+    "image": "/kitchen-set/pic-1.jpg",
+    "location": "Batu, Indonesia",
+    "price": 270,
+    "isPopular": false,
+    "description": "Mountain Majesty is a luxurious retreat set against the stunning backdrop of Batu's mountainous landscape. This hotel offers spacious living areas designed for relaxation and comfort, making it an ideal getaway for nature lovers and adventurers alike.\n\nEach suite at Mountain Majesty is elegantly furnished, with large living rooms that feature cozy fireplaces and breathtaking mountain views. The decor blends rustic charm with modern amenities, providing a warm and inviting atmosphere for guests.\n\nThe hotel offers a variety of facilities including a heated outdoor pool, a state-of-the-art fitness center, and a fine dining restaurant that serves both local and international cuisine. With its serene location and top-notch amenities, Mountain Majesty is perfect for those looking to unwind and enjoy the natural beauty of Batu."
+  },
+  {
+    "name": "Urban Elegance",
+    "image": "/kitchen-set/pic-1.jpg",
+    "location": "Medan, Indonesia",
+    "price": 250,
+    "isPopular": true,
+    "description": "Urban Elegance is a modern hotel situated in the bustling city of Medan, offering chic living spaces with all the comforts of home. Ideal for business travelers and tourists, this hotel combines urban convenience with sophisticated style.\n\nEach room at Urban Elegance features spacious living areas with contemporary furnishings and floor-to-ceiling windows that offer stunning city views. The design focuses on comfort and functionality, ensuring a relaxing and productive stay for every guest.\n\nAmenities at Urban Elegance include a rooftop pool, a fully equipped business center, and an on-site restaurant that offers a diverse menu of local and international dishes. With its central location and comprehensive services, Urban Elegance provides an exceptional experience for those visiting Medan."
   }
 ]

@@ -30,5 +30,29 @@
     "price": 260,
     "isPopular": false,
     "description": "Enchanted Retreat in Surabaya is a serene oasis that combines modern luxury with natural beauty. Located away from the city's hustle, this retreat offers a peaceful environment where guests can unwind and rejuvenate. The rooms are spacious and elegantly decorated, featuring all the amenities needed for a comfortable stay.\n\nThe retreat offers a range of facilities including a tranquil spa, a beautiful outdoor pool, and a gourmet restaurant that serves both local and international cuisines. Guests can also enjoy various activities such as guided nature walks and cultural excursions. Enchanted Retreat is perfect for those looking to escape the everyday stress and immerse themselves in a serene and luxurious setting."
+  },
+  {
+    "name": "Paradise Cove Resort",
+    "image": "/kitchen-set/pic-1.jpg",
+    "location": "Lombok, Indonesia",
+    "price": 270,
+    "isPopular": true,
+    "description": "Paradise Cove Resort in Lombok is a luxurious beachfront resort offering an escape into paradise. The resort is set on a private beach, providing guests with stunning ocean views and direct access to the sandy shores. Each villa is tastefully decorated with a blend of modern and traditional Lombok designs, ensuring a comfortable and elegant stay.\n\nGuests can enjoy a variety of activities including snorkeling, diving, and yoga classes. The resort features a lavish spa, an infinity pool overlooking the ocean, and several dining options that offer both local and international cuisines. Paradise Cove Resort is perfect for those seeking a mix of relaxation and adventure in a beautiful tropical setting."
+  },
+  {
+    "name": "Ocean Bliss Retreat",
+    "image": "/kitchen-set/pic-1.jpg",
+    "location": "Uluwatu, Indonesia",
+    "price": 320,
+    "isPopular": true,
+    "description": "Ocean Bliss Retreat in Uluwatu offers a stunning cliffside escape with panoramic ocean views. This luxurious resort is designed to provide a serene and intimate experience, featuring beautifully appointed suites and villas that blend modern luxury with Balinese charm.\n\nThe retreat offers an array of amenities including a spectacular infinity pool, a state-of-the-art fitness center, and a world-class spa offering rejuvenating treatments. Guests can dine at the on-site restaurant which serves gourmet dishes inspired by both local and international flavors. Ocean Bliss Retreat is an ideal destination for those seeking a peaceful and luxurious getaway with breathtaking views."
+  },
+  {
+    "name": "Tranquil Oasis",
+    "image": "/kitchen-set/pic-1.jpg",
+    "location": "Ubud, Indonesia",
+    "price": 240,
+    "isPopular": false,
+    "description": "Tranquil Oasis in Ubud is a charming boutique resort nestled amidst lush tropical gardens and rice paddies. The resort offers a serene environment where guests can unwind and reconnect with nature. Each room and villa is tastefully decorated, combining contemporary comforts with traditional Balinese elements to create a relaxing and inviting space.\n\nThe resort features a tranquil spa, a beautiful outdoor pool, and an organic restaurant that serves healthy and delicious meals. Guests can participate in yoga sessions, guided nature walks, and cultural workshops. Tranquil Oasis is perfect for those looking to escape the hustle and bustle and enjoy a peaceful and rejuvenating stay in the heart of Ubud."
   }
 ]
