@@ -1,82 +1,23 @@
 "use client";
 
-import HeaderBookingStep from "@/components/molecules/headers/HeaderBookingStep";
+import { useRouter } from "next/navigation";
 import React, { useState } from "react";
+import { useAtomValue, useSetAtom } from "jotai";
+import { useForm, FormProvider } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
 
 import { Button } from "@/components/atoms/Button";
 import Step1 from "@/components/molecules/steps/Step1";
 import Step2 from "@/components/molecules/steps/Step2";
 import Step3 from "@/components/molecules/steps/Step3";
-import { atom, useAtomValue, useSetAtom } from "jotai";
-import { useForm, FormProvider } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
+import HeaderBookingStep from "@/components/molecules/headers/HeaderBookingStep";
 
-import { z } from "zod";
-import { useRouter } from "next/navigation";
-
-const schema = z.object({
-  first_name: z.string().min(2).max(20),
-  last_name: z.string().min(2).max(20),
-  email: z.string().email(),
-  phone_number: z.string().superRefine((value, ctx) => {
-    if (!value) {
-      ctx.addIssue({
-        code: z.ZodIssueCode.custom,
-        message: `Phone number is required`,
-      });
-
-      return;
-    }
-
-    if (!/^[+]{1}(?:[0-9-()/.]\s?){6,15}[0-9]{1}$/.test(value)) {
-      ctx.addIssue({
-        code: z.ZodIssueCode.custom,
-        message: `Invalid phone number`,
-      });
-    }
-  }),
-});
-
-const uploadInvoice = z.instanceof(FileList).superRefine((val, ctx) => {
-  if (val.length === 0) {
-    ctx.addIssue({
-      code: z.ZodIssueCode.custom,
-      message: `Kindly upload your invoice`,
-    });
-    return;
-  }
-
-  const file = val[0];
-
-  if (file.size > 2000000) {
-    ctx.addIssue({
-      code: z.ZodIssueCode.custom,
-      message: `Max size 2MB`,
-    });
-  }
-
-  if (!file.type.includes("pdf")) {
-    ctx.addIssue({
-      code: z.ZodIssueCode.custom,
-      message: `Format should be PDF`,
-    });
-  }
-});
-
-const schema2 = z.object({
-  upload_invoice: uploadInvoice,
-  bank: z.string().min(2).max(20),
-  account_name: z.string().min(2).max(20),
-});
-
-export type Schema = z.infer<typeof schema>;
-export type Schema2 = z.infer<typeof schema2>;
-
-const combineSchema = schema.merge(schema2);
-
-export type CombinedSchema = z.infer<typeof combineSchema>;
-
-export const step = atom<number>(0);
+import {
+  SchemaInformation,
+  schemaBankAccount,
+  schemaInformation,
+} from "@/lib/schema";
+import { step } from "@/lib/jotai";
 
 export default function BookingDestination() {
   const _step = useAtomValue(step);
@@ -84,8 +25,8 @@ export default function BookingDestination() {
   const router = useRouter();
   const [isLoading, setIsLoading] = useState(false);
 
-  const methods = useForm<Schema>({
-    resolver: zodResolver(_step === 0 ? schema : schema2),
+  const methods = useForm<SchemaInformation>({
+    resolver: zodResolver(_step === 0 ? schemaInformation : schemaBankAccount),
   });
 
   const onSubmit = () => {
