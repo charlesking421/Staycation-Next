@@ -3,7 +3,7 @@ import React from "react";
 import { Button } from "@/components/atoms/Button";
 import Ratings from "@/components/atoms/Ratings";
 
-export default function TestimonyMain() {
+export default function UserFeedback() {
   return (
     <div className="grid lg:grid-cols-2 lg:mt-24 mt-12">
       <div className="col-span-1">

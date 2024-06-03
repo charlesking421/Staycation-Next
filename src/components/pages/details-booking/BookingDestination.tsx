@@ -19,6 +19,7 @@ import {
 } from "@/lib/schema";
 import { atomBooking, detailCardItem, step } from "@/lib/jotai";
 import { useResetAtom } from "jotai/utils";
+import { twMerge } from "tailwind-merge";
 
 const BookingDestination = () => {
   const currentStep = useAtomValue(step);
@@ -38,7 +39,7 @@ const BookingDestination = () => {
   });
 
   const onSubmit = () => {
-    if (currentStep < 2) {
+    if (currentStep < 1) {
       setStep(currentStep + 1);
     } else {
       setIsLoading(true);
@@ -75,7 +76,7 @@ const BookingDestination = () => {
   };
 
   return (
-    <main className="lg:container lg:mx-auto lg:px-0 px-4">
+    <main className="lg:container lg:mx-auto lg:px-0 px-4 lg:mt-28">
       <HeaderBookingStep step={3} currentStep={currentStep} />
       <FormProvider {...methods}>
         <form onSubmit={methods.handleSubmit(onSubmit)}>
@@ -98,9 +99,10 @@ const BookingDestination = () => {
                 size="lg"
                 disabled={isLoading}
                 type="button"
-                className={`w-full lg:text-base text-sm ${
+                className={twMerge(
+                  "w-full lg:text-base text-sm",
                   currentStep === 2 ? "bg-cyan-800" : "bg-gray-200"
-                }`}
+                )}
               >
                 {currentStep === 2
                   ? "Back to Home"

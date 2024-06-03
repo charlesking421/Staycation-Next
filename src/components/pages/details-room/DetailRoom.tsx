@@ -4,11 +4,11 @@ import ImageDetailRoom from "@/components/molecules/sections/ImageDetailRoom";
 import DescriptionDetailRoom from "@/components/molecules/sections/DescriptionDetailRoom";
 import FormPickRoom from "@/components/molecules/sections/FormPickRoom";
 import SuggestionTreasure from "@/components/molecules/sections/SuggestionTreasure";
-import TestimonyMain from "@/components/molecules/testimony/TestimonyMain";
+import UserFeedback from "@/components/molecules/UserFeedback";
 
 export default function DetailRoom() {
   return (
-    <main className="lg:mx-auto lg:container lg:px-0 px-4">
+    <main className="lg:mx-auto lg:container lg:px-0 px-4 lg:mt-28">
       <HeaderBreadcrumb />
 
       <ImageDetailRoom />
@@ -19,7 +19,7 @@ export default function DetailRoom() {
       </div>
 
       <SuggestionTreasure />
-      <TestimonyMain />
+      <UserFeedback />
     </main>
   );
 }
