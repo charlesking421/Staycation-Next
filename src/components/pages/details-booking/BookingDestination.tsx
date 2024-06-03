@@ -68,7 +68,7 @@ const BookingDestination = () => {
     } else if (currentStep !== 2) {
       setStep(0);
     } else {
-      setStep(0);
+      window.location.href = "/";
       resetDetailBooking();
       resetDetailCard();
     }
