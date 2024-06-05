@@ -1,5 +1,6 @@
 "use client";
 
+import { detailCardItem } from "@/lib/jotai";
 import { useAtomValue } from "jotai";
 import {
   AirVent,
@@ -12,7 +13,6 @@ import {
   Wifi,
 } from "lucide-react";
 import React from "react";
-import { detailCardItem } from "../contains/ContainMostPicked";
 
 export default function DescriptionDetailRoom() {
   const { description } = useAtomValue(detailCardItem);

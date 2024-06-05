@@ -7,9 +7,9 @@ import {
   BreadcrumbList,
   BreadcrumbSeparator,
 } from "@/components/atoms/Breadcrumb";
+import { detailCardItem } from "@/lib/jotai";
 import { useAtomValue } from "jotai";
 import React from "react";
-import { detailCardItem } from "../contains/ContainMostPicked";
 
 export default function HeaderBreadcrumb() {
   const { name, location } = useAtomValue(detailCardItem);

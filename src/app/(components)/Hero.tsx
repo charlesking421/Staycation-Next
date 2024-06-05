@@ -55,7 +55,7 @@ export default function Hero() {
         <div className="relative w-[520px] h-[410px]">
           <Image
             className="absolute !-left-20"
-            src="/hero-landing.png"
+            src="/images/hero-landing.png"
             fill
             priority
             alt="hero-landing-page"

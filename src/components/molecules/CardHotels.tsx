@@ -3,10 +3,10 @@
 import React from "react";
 import Card from "@/components/molecules/Card";
 import { useSetAtom } from "jotai";
-import { ScrollArea, ScrollBar } from "../ScrollArea";
 import { detailCardItem } from "@/lib/jotai";
+import { ScrollArea, ScrollBar } from "./ScrollArea";
 
-export function ContainHotelLiving({ data }: { data: TResponseGetData }) {
+export function CardHotels({ data }: { data: TResponseGetData }) {
   const setAtomValue = useSetAtom(detailCardItem);
 
   const onViewDetails = (details: TResponseGetData[0]) => {

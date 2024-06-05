@@ -6,8 +6,7 @@ import { Minus, Plus } from "lucide-react";
 import { DatePickerWithRange } from "@/components/atoms/Datepicker";
 import { useAtomValue, useAtom, useSetAtom } from "jotai";
 import Link from "next/link";
-import { detailCardItem } from "@/components/molecules/contains/ContainMostPicked";
-import { atomBooking, atomUnit } from "@/lib/jotai";
+import { atomBooking, atomUnit, detailCardItem } from "@/lib/jotai";
 
 export default function FormPickRoom() {
   const [perNight, setPerNight] = useAtom(atomUnit);

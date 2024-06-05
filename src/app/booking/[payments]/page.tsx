@@ -1,11 +1,11 @@
-import BookingDestination from "@/components/pages/details-booking/BookingDestination";
+import BookingPayments from "@/components/pages/booking-payments/BookingPayments";
 import SecondaryLayout from "@/layouts/SecondaryLayout";
 import React from "react";
 
 export default function page() {
   return (
     <SecondaryLayout>
-      <BookingDestination />
+      <BookingPayments />
     </SecondaryLayout>
   );
 }

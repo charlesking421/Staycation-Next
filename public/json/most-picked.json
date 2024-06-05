@@ -1,7 +1,7 @@
 [
   {
     "name": "Popular Paradise Hotel",
-    "image": "/most-picked/most-picked-big.png",
+    "image": "/images/most-picked/most-picked-big.png",
     "location": "Bali, Indonesia",
     "price": 250,
     "isPopular": true,
@@ -9,7 +9,7 @@
   },
   {
     "name": "Chosen Comfort",
-    "image": "/most-picked/pic-1.jpg",
+    "image": "/images/most-picked/pic-1.jpg",
     "location": "Jakarta, Indonesia",
     "price": 220,
     "isPopular": true,
@@ -17,7 +17,7 @@
   },
   {
     "name": "Top Pick Hotel",
-    "image": "/most-picked/pic-2.jpg",
+    "image": "/images/most-picked/pic-2.jpg",
     "location": "Yogyakarta, Indonesia",
     "price": 200,
     "isPopular": true,
@@ -25,7 +25,7 @@
   },
   {
     "name": "Favorite Stay",
-    "image": "/most-picked/pic-3.jpg",
+    "image": "/images/most-picked/pic-3.jpg",
     "location": "Bandung, Indonesia",
     "price": 180,
     "isPopular": true,
@@ -33,7 +33,7 @@
   },
   {
     "name": "Most Loved Hotel",
-    "image": "/most-picked/pic.jpg",
+    "image": "/images/most-picked/pic.jpg",
     "location": "Surabaya, Indonesia",
     "price": 210,
     "isPopular": true,

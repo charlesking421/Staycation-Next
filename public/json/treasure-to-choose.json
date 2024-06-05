@@ -1,7 +1,7 @@
 [
   {
     "name": "Hidden Gem Resort",
-    "image": "/treasure-choose/pic.jpg",
+    "image": "/images/treasure-choose/pic.jpg",
     "location": "Bali, Indonesia",
     "price": 300,
     "isPopular": true,
@@ -9,7 +9,7 @@
   },
   {
     "name": "Secluded Sanctuary",
-    "image": "/treasure-choose/pic-1.jpg",
+    "image": "/images/treasure-choose/pic-1.jpg",
     "location": "Yogyakarta, Indonesia",
     "price": 250,
     "isPopular": false,
@@ -17,7 +17,7 @@
   },
   {
     "name": "Secret Haven",
-    "image": "/treasure-choose/pic-2.jpg",
+    "image": "/images/treasure-choose/pic-2.jpg",
     "location": "Bandung, Indonesia",
     "price": 280,
     "isPopular": true,
@@ -25,7 +25,7 @@
   },
   {
     "name": "Enchanted Retreat",
-    "image": "/treasure-choose/pic-3.jpg",
+    "image": "/images/treasure-choose/pic-3.jpg",
     "location": "Surabaya, Indonesia",
     "price": 260,
     "isPopular": false,
@@ -33,7 +33,7 @@
   },
   {
     "name": "Paradise Cove Resort",
-    "image": "/kitchen-set/pic-1.jpg",
+    "image": "/images/kitchen-set/pic-1.jpg",
     "location": "Lombok, Indonesia",
     "price": 270,
     "isPopular": true,
@@ -41,7 +41,7 @@
   },
   {
     "name": "Ocean Bliss Retreat",
-    "image": "/kitchen-set/pic-1.jpg",
+    "image": "/images/kitchen-set/pic-1.jpg",
     "location": "Uluwatu, Indonesia",
     "price": 320,
     "isPopular": true,
@@ -49,7 +49,7 @@
   },
   {
     "name": "Tranquil Oasis",
-    "image": "/kitchen-set/pic-1.jpg",
+    "image": "/images/kitchen-set/pic-1.jpg",
     "location": "Ubud, Indonesia",
     "price": 240,
     "isPopular": false,

@@ -1,8 +1,8 @@
 import React from "react";
 
 import { Label } from "@/components/atoms/Label";
-import { ContainMostPicked } from "@/components/molecules/contains/ContainMostPicked";
 import { getData } from "@/services/fetch";
+import { ContainMostPicked } from "./ContainMostPicked";
 
 export default async function MostPicked() {
   const data: TResponseGetData = await getData({ url: "most-picked.json" });

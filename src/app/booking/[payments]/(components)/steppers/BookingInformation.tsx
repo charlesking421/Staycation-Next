@@ -2,13 +2,13 @@ import Image from "next/image";
 import React from "react";
 import { useAtomValue } from "jotai";
 
-import { LabelHeader } from "@/components/molecules/headers/HeaderBookingStep";
+import { LabelHeader } from "@/app/booking/[payments]/(components)/HeaderBookingStep";
 import { InputWithLabel } from "@/components/atoms/InputWithLabel";
 import { useFormContext } from "react-hook-form";
 import { atomBooking } from "@/lib/jotai";
 import { SchemaInformation } from "@/lib/schema";
 
-export default function Step1() {
+export default function BookingInformation() {
   const { image, name, location, total, night } = useAtomValue(atomBooking);
   const {
     register,

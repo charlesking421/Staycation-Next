@@ -1,5 +1,5 @@
 import React from "react";
-import { LabelHeader } from "../headers/HeaderBookingStep";
+import { LabelHeader } from "../HeaderBookingStep";
 import { InputWithLabel } from "@/components/atoms/InputWithLabel";
 import { InputFile } from "@/components/atoms/InputFile";
 import BankAccount from "@/components/atoms/BankAccount";
@@ -8,7 +8,7 @@ import { SchemaBankAccount } from "@/lib/schema";
 import { useAtomValue } from "jotai";
 import { atomBooking } from "@/lib/jotai";
 
-export default function Step2() {
+export default function PaymentInformation() {
   const {
     register,
     formState: { errors },
@@ -41,13 +41,13 @@ export default function Step2() {
           </p>
 
           <BankAccount
-            images="/logo-bank/logo_bank.jpg"
+            images="/images/logo-bank/logo_bank.jpg"
             bankName="Bank Central Asia"
             noRek="2208 1996"
             name="Diko Mahendra"
           />
           <BankAccount
-            images="/logo-bank/logo_bank-1.jpg"
+            images="/images/logo-bank/logo_bank-1.jpg"
             bankName="Bank Mandiri"
             noRek="2208 1996"
             name="Diko Mahendra"

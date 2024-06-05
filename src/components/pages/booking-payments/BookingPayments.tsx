@@ -7,10 +7,10 @@ import { useForm, FormProvider } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 
 import { Button } from "@/components/atoms/Button";
-import Step1 from "@/components/molecules/steps/Step1";
-import Step2 from "@/components/molecules/steps/Step2";
-import Step3 from "@/components/molecules/steps/Step3";
-import HeaderBookingStep from "@/components/molecules/headers/HeaderBookingStep";
+import BookingInformation from "@/app/booking/[payments]/(components)/steppers/BookingInformation";
+import PaymentInformation from "@/app/booking/[payments]/(components)/steppers/PaymentInformation";
+import BookingSuccess from "@/app/booking/[payments]/(components)/steppers/BookingSuccess";
+import HeaderBookingStep from "@/app/booking/[payments]/(components)/HeaderBookingStep";
 
 import {
   SchemaInformation,
@@ -21,7 +21,7 @@ import { atomBooking, detailCardItem, step } from "@/lib/jotai";
 import { useResetAtom } from "jotai/utils";
 import { twMerge } from "tailwind-merge";
 
-const BookingDestination = () => {
+const BookingPayments = () => {
   const currentStep = useAtomValue(step);
   const setStep = useSetAtom(step);
   const resetDetailBooking = useResetAtom(atomBooking);
@@ -54,12 +54,12 @@ const BookingDestination = () => {
   const renderStepComponent = useCallback(() => {
     switch (currentStep) {
       case 1:
-        return <Step2 />;
+        return <PaymentInformation />;
       case 2:
-        return <Step3 />;
+        return <BookingSuccess />;
       case 0:
       default:
-        return <Step1 />;
+        return <BookingInformation />;
     }
   }, [currentStep]);
 
@@ -118,4 +118,4 @@ const BookingDestination = () => {
   );
 };
 
-export default BookingDestination;
+export default BookingPayments;

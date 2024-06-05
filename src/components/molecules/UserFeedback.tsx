@@ -10,7 +10,7 @@ export default function UserFeedback() {
         <div className="relative lg:w-[400px] lg:h-[501px] aspect-square">
           <Image
             className="lg:absolute lg:!left-10 lg:!top-10"
-            src="/family-feedback.png"
+            src="/images/family-feedback.png"
             fill
             priority
             alt="family-feedback-page"

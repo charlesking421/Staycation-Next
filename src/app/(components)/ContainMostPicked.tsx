@@ -4,7 +4,7 @@ import React from "react";
 import Card from "@/components/molecules/Card";
 import { useSetAtom } from "jotai";
 import { atomWithStorage } from "jotai/utils";
-import { ScrollArea, ScrollBar } from "../ScrollArea";
+import { ScrollArea, ScrollBar } from "@/components/molecules/ScrollArea";
 
 export const detailCardItem = atomWithStorage<TResponseGetData[0]>("detail", {
   name: "",

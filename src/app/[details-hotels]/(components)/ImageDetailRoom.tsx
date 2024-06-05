@@ -1,9 +1,9 @@
 "use client";
 
+import { detailCardItem } from "@/lib/jotai";
 import { useAtomValue } from "jotai";
 import Image from "next/image";
 import React from "react";
-import { detailCardItem } from "@/components/molecules/contains/ContainMostPicked";
 
 export default function ImageDetailRoom() {
   const { image } = useAtomValue(detailCardItem);
@@ -25,7 +25,7 @@ export default function ImageDetailRoom() {
         <div>
           <div className="relative aspect-video">
             <Image
-              src="/detail-village/small-1.jpg"
+              src="/images/detail-village/small-1.jpg"
               fill
               priority
               objectFit="contain"
@@ -37,7 +37,7 @@ export default function ImageDetailRoom() {
         <div>
           <div className="relative aspect-video">
             <Image
-              src="/detail-village/small.jpg"
+              src="/images/detail-village/small.jpg"
               fill
               objectFit="contain"
               priority
