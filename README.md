@@ -4,10 +4,11 @@ simple landing page for train slicing, layouting, and responsive design.
 
 ## Tech
 
-- [Zod](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
-- [React Hooks Form](https://github.com/matiassingers/awesome-readme)
-- [Shadcn/ui](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
-- [NextJs/app dir](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
+- [Zod](https://zod.dev/)
+- [React Hooks Form](https://www.react-hook-form.com/)
+- [Shadcn/ui](https://ui.shadcn.com/)
+- [NextJs/app dir](https://nextjs.org/docs/app)
+- [TailwindCSS](https://tailwindcss.com/)
 
 ## Authors
 
@@ -17,7 +18,7 @@ simple landing page for train slicing, layouting, and responsive design.
 
 ### **Atomic Design Pattern**
 
-````
+```
 public => assets static
 src
 ├── @types => globals types
@@ -33,6 +34,7 @@ src
 ├── libs => utilities
 ├── service => comunicate with data json
 
+```
 
 ## Run Locally
 
@@ -40,7 +42,7 @@ Clone the project
 
 ```bash
   git clone https://github.com/DikoMahendraa/staycation-landing-page
-````
+```
 
 Go to the project directory
 
