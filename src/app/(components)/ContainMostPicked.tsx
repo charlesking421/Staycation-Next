@@ -5,6 +5,7 @@ import Card from "@/components/molecules/Card";
 import { useSetAtom } from "jotai";
 import { atomWithStorage } from "jotai/utils";
 import { ScrollArea, ScrollBar } from "@/components/molecules/ScrollArea";
+import { motion } from "framer-motion";
 
 export const detailCardItem = atomWithStorage<TResponseGetData[0]>("detail", {
   name: "",
@@ -45,23 +46,30 @@ export function ContainMostPicked({ data }: { data: TResponseGetData }) {
         {data.map((item, index) => {
           if (index !== 0) {
             return (
-              <Card
+              <motion.div
                 key={index}
-                onClick={() => onViewDetails(item)}
-                hasShadowImage
-                price={String(item.price)}
-                hasBadge={true}
-                badgeLabel={
-                  <>
-                    <strong className="font-semibold">{item.price}$</strong> per
-                    night
-                  </>
-                }
-                name={item.name}
-                place={item.location}
-                className="relative aspect-video rounded-2xl overflow-hidden"
-                images={item.image}
-              />
+                initial={{ opacity: 0, y: 2 * index }}
+                animate={{ opacity: 1, y: 2 * index }}
+                exit={{ opacity: 0, x: 2 * index }}
+                transition={{ delay: index * 0.1 }}
+              >
+                <Card
+                  onClick={() => onViewDetails(item)}
+                  hasShadowImage
+                  price={String(item.price)}
+                  hasBadge={true}
+                  badgeLabel={
+                    <>
+                      <strong className="font-semibold">{item.price}$</strong>{" "}
+                      per night
+                    </>
+                  }
+                  name={item.name}
+                  place={item.location}
+                  className="relative aspect-video rounded-2xl overflow-hidden"
+                  images={item.image}
+                />
+              </motion.div>
             );
           }
         })}
