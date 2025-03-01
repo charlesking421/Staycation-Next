@@ -44,13 +44,13 @@ export default function PaymentInformation() {
             images="/images/logo-bank/logo_bank.jpg"
             bankName="Bank Central Asia"
             noRek="2208 1996"
-            name="Diko Mahendra"
+            name="Pavlo Radionov"
           />
           <BankAccount
             images="/images/logo-bank/logo_bank-1.jpg"
             bankName="Bank Mandiri"
             noRek="2208 1996"
-            name="Diko Mahendra"
+            name="Pavlo Radionov"
           />
         </div>
         <div className="lg:col-span-1 col-span-2 lg:space-y-5 space-y-3 lg:pr-[12rem] lg:mt-0 mt-8">

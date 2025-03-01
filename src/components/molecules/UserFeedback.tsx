@@ -30,7 +30,7 @@ export default function UserFeedback() {
           ...
         </h1>
         <p className=" text-gray-400 lg:text-base text-xs w-1/2 mt-5 mb-7">
-          Diko Mahendra, Frontend Developer
+          Pavlo Radionov, Fullstack Developer
         </p>
         <div>
           <Button className="bg-cyan-600 font-light lg:text-base text-xs">

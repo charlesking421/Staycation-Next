@@ -17,8 +17,8 @@ const data = [
   {
     title: "Connect Us",
     description: [
-      "diko.dev99@gmail.com",
-      "0823 - 8489 - 8030",
+      "cryptoangel1024@gmail.com",
+      "+14062952901",
       "Privacy",
       "Staycation, Bandar Lampung",
     ],
