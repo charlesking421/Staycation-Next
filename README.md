@@ -12,7 +12,7 @@ simple landing page for train slicing, layouting, and responsive design.
 
 ## Authors
 
-- [@diko.dev99](https://www.github.com/dikomahendraa)
+- [@pashacoder217](https://www.github.com/pashacoder217)
 
 ## Folder Structure
 
@@ -41,13 +41,13 @@ src
 Clone the project
 
 ```bash
-  git clone https://github.com/DikoMahendraa/staycation-landing-page
+  git clone https://github.com/pashacoder217/Staycation-Next
 ```
 
 Go to the project directory
 
 ```bash
-  cd staycation-landing-page
+  cd Staycation-Next
 ```
 
 Install dependencies
