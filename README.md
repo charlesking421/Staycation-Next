@@ -12,7 +12,7 @@ simple landing page for train slicing, layouting, and responsive design.
 
 ## Authors
 
-- [@charlesking421](https://www.github.com/charlesking421)
+- [Charles King Ureta](https://www.github.com/charlesking421)
 
 ## Folder Structure
 
